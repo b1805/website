@@ -1,7 +1,7 @@
 "use client";
 
 import { Button, useMediaQuery } from "@relume_io/relume-ui";
-import { AnimatePresence, motion } from "framer-motion";
+import {AnimatePresence, motion} from "framer-motion/dist/framer-motion";
 import React, { useState } from "react";
 import { RxChevronDown } from "react-icons/rx";
 
