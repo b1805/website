@@ -1,559 +1,1137 @@
 <!DOCTYPE html>
-<html >
-<head>
-  
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  
-  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <meta name="description" content="Explore the Centre for Open Science and Synthesis in Ecology and Evolution (COSSEE). Discover groundbreaking research, publications, and opportunities. Learn about open science initiatives and connect with our team.">
-  <title>COSSEE: Centre for Open Science and Synthesis in Ecology and Evolution</title>
-  <link rel="stylesheet" href="css/style1.css">
-  <link rel="stylesheet" href="css/style2.css">
-  <link rel="stylesheet" href="css/style3.css">
-  <link rel="stylesheet" href="css/style4.css">
-  <link rel="stylesheet" href="css/style5.css">
-  <link rel="stylesheet" href="css/style6.css">
-  <link rel="stylesheet" href="css/style7.css">
-  <link rel="stylesheet" href="css/style8.css">
-  <link rel="preload" href="css/style9.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="css/style10.css"></noscript>
-  <link rel="stylesheet" href="css/style11.css" type="text/css">
-  
-  
-  
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <meta
+      name="description"
+      content="Explore the Centre for Open Science and Synthesis in Ecology and Evolution (COSSEE). Discover groundbreaking research, publications, and opportunities. Learn about open science initiatives and connect with our team."
+    />
+    <title>
+      COSSEE: Centre for Open Science and Synthesis in Ecology and Evolution
+    </title>
+    <link rel="stylesheet" href="css/style1.css" />
+    <link rel="stylesheet" href="css/style2.css" />
+    <link rel="stylesheet" href="css/style3.css" />
+    <link rel="stylesheet" href="css/style4.css" />
+    <link rel="stylesheet" href="css/style5.css" />
+    <link rel="stylesheet" href="css/style6.css" />
+    <link rel="stylesheet" href="css/style7.css" />
+    <link rel="stylesheet" href="css/style8.css" />
+    <link
+      rel="preload"
+      href="css/style9.css"
+      as="style"
+      onload="this.onload=null;this.rel='stylesheet'"
+    />
+    <noscript><link rel="stylesheet" href="css/style10.css" /></noscript>
+    <link rel="stylesheet" href="css/style11.css" type="text/css" />
 
-<style>
-.navbar-fixed-top {
-  top: auto;
-}
+    <style>
+      .navbar-fixed-top {
+        top: auto;
+      }
 
-.navbar.opened {
-    z-index: 1032;
-}
-@-webkit-keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
-@-moz-keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
-@-o-keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
-   @keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
-@-webkit-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
-@-moz-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
-@-o-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
-   @keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
+      .navbar.opened {
+        z-index: 1032;
+      }
+      @-webkit-keyframes animationBanner {
+        0% {
+          opacity: 0;
+          top: -11rem;
+        }
+        91% {
+          opacity: 0;
+          top: -11rem;
+        }
+        100% {
+          opacity: 1;
+          top: 0;
+        }
+      }
+      @-moz-keyframes animationBanner {
+        0% {
+          opacity: 0;
+          top: -11rem;
+        }
+        91% {
+          opacity: 0;
+          top: -11rem;
+        }
+        100% {
+          opacity: 1;
+          top: 0;
+        }
+      }
+      @-o-keyframes animationBanner {
+        0% {
+          opacity: 0;
+          top: -11rem;
+        }
+        91% {
+          opacity: 0;
+          top: -11rem;
+        }
+        100% {
+          opacity: 1;
+          top: 0;
+        }
+      }
+      @keyframes animationBanner {
+        0% {
+          opacity: 0;
+          top: -11rem;
+        }
+        91% {
+          opacity: 0;
+          top: -11rem;
+        }
+        100% {
+          opacity: 1;
+          top: 0;
+        }
+      }
+      @-webkit-keyframes animationHeight {
+        0% {
+          height: 0;
+        }
+        91% {
+          height: 0;
+        }
+        100% {
+          height: 11rem;
+        }
+      }
+      @-moz-keyframes animationHeight {
+        0% {
+          height: 0;
+        }
+        91% {
+          height: 0;
+        }
+        100% {
+          height: 11rem;
+        }
+      }
+      @-o-keyframes animationHeight {
+        0% {
+          height: 0;
+        }
+        91% {
+          height: 0;
+        }
+        100% {
+          height: 11rem;
+        }
+      }
+      @keyframes animationHeight {
+        0% {
+          height: 0;
+        }
+        91% {
+          height: 0;
+        }
+        100% {
+          height: 11rem;
+        }
+      }
 
-@-webkit-keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-@-moz-keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-@-o-keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-@keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+      @-webkit-keyframes animationClosing {
+        0% {
+          height: 11rem;
+          opacity: 1;
+        }
+        30% {
+          height: 11rem;
+          opacity: 0.5;
+        }
+        100% {
+          height: 0;
+          opacity: 0;
+        }
+      }
+      @-moz-keyframes animationClosing {
+        0% {
+          height: 11rem;
+          opacity: 1;
+        }
+        30% {
+          height: 11rem;
+          opacity: 0.5;
+        }
+        100% {
+          height: 0;
+          opacity: 0;
+        }
+      }
+      @-o-keyframes animationClosing {
+        0% {
+          height: 11rem;
+          opacity: 1;
+        }
+        30% {
+          height: 11rem;
+          opacity: 0.5;
+        }
+        100% {
+          height: 0;
+          opacity: 0;
+        }
+      }
+      @keyframes animationClosing {
+        0% {
+          height: 11rem;
+          opacity: 1;
+        }
+        30% {
+          height: 11rem;
+          opacity: 0.5;
+        }
+        100% {
+          height: 0;
+          opacity: 0;
+        }
+      }
 
-@media(max-width: 575px) {
+      @media (max-width: 575px) {
+        @-webkit-keyframes animationBanner {
+          0% {
+            opacity: 0;
+            top: -14rem;
+          }
+          91% {
+            opacity: 0;
+            top: -14rem;
+          }
+          100% {
+            opacity: 1;
+            top: 0;
+          }
+        }
+        @-moz-keyframes animationBanner {
+          0% {
+            opacity: 0;
+            top: -14rem;
+          }
+          91% {
+            opacity: 0;
+            top: -14rem;
+          }
+          100% {
+            opacity: 1;
+            top: 0;
+          }
+        }
+        @-o-keyframes animationBanner {
+          0% {
+            opacity: 0;
+            top: -14rem;
+          }
+          91% {
+            opacity: 0;
+            top: -14rem;
+          }
+          100% {
+            opacity: 1;
+            top: 0;
+          }
+        }
+        @keyframes animationBanner {
+          0% {
+            opacity: 0;
+            top: -14rem;
+          }
+          91% {
+            opacity: 0;
+            top: -14rem;
+          }
+          100% {
+            opacity: 1;
+            top: 0;
+          }
+        }
+        @-webkit-keyframes animationHeight {
+          0% {
+            height: 0;
+          }
+          91% {
+            height: 0;
+          }
+          100% {
+            height: 14rem;
+          }
+        }
+        @-moz-keyframes animationHeight {
+          0% {
+            height: 0;
+          }
+          91% {
+            height: 0;
+          }
+          100% {
+            height: 14rem;
+          }
+        }
+        @-o-keyframes animationHeight {
+          0% {
+            height: 0;
+          }
+          91% {
+            height: 0;
+          }
+          100% {
+            height: 14rem;
+          }
+        }
+        @keyframes animationHeight {
+          0% {
+            height: 0;
+          }
+          91% {
+            height: 0;
+          }
+          100% {
+            height: 14rem;
+          }
+        }
 
-  @-webkit-keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
-  @-moz-keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
-  @-o-keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
-    @keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
-  @-webkit-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
-  @-moz-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
-  @-o-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
-    @keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
-
-  @-webkit-keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-  @-moz-keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-  @-o-keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-  @keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
-}
-</style>
-</head>
-<body>
-  
-  <section data-bs-version="5.1" class="menu menu2 cid-uJSrOkOEyE" once="menu" id="menu-5-uJSrOkOEyE">
-	
-
-	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
-		<div class="container">
-			<div class="navbar-brand">
-				<span class="navbar-logo">
-					<a href="#">
-						<img src="web_files/photo-1732881112067-aa3e9ece2-h_ma49wziz.jpg" alt="" style="height: 4.3rem;">
-					</a>
-				</span>
-				<span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="index.html" autocomplete="off">COSSEE</a></span>
-			</div>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-				<div class="hamburger">
-					<span></span>
-					<span></span>
-					<span></span>
-					<span></span>
-				</div>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
-						<a class="nav-link link text-black display-4" href="people.html">People</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link link text-black display-4" href="research.html" aria-expanded="false">Research</a>
-					</li><li class="nav-item"><a class="nav-link link text-black display-4" href="publications.html" aria-expanded="false" autocomplete="off">Publications</a></li>
-					<li class="nav-item">
-						<a class="nav-link link text-black display-4" href="blog.html">Blog</a>
-					</li><li class="nav-item"><a class="nav-link link text-black display-4" href="open-sciences.html" autocomplete="off">Open Science</a></li><li class="nav-item">
-            <a class="nav-link link text-black display-4" href="opportunities.html" autocomplete="off">Opportunities</a></li><li class="nav-item">
-              <a class="nav-link link text-black display-4" href="links.html" autocomplete="off">Links</a></li></ul>
-				
-				<div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="#" autocomplete="off">Log In</a></div>
-			</div>
-		</div>
-	</nav>
-</section>
-
-<section data-bs-version="5.1" class="header18 cid-uJSrOkQqdL mbr-fullscreen" data-bg-video="web_files/vid1.mp4">
-  
-
-  <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(0, 0, 0);"></div>
-  <div class="container-fluid">
-    <div class="row">
-      <div class="content-wrap col-12 col-md-12">
-        <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1">
-          <strong>Centre for Open Science and Synthesis in Ecology and Evolution</strong>
-        </h1>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section data-bs-version="5.1" class="header12 cid-uJSrOkRFm1" id="call-to-action-8-uJSrOkRFm1">
-    
-
-    
-    
-
-    <div class="text-center container">
-        <div class="row mb-4 justify-content-center">
-            <div class="col-12 col-md-4">
-                <img src="web_files/photo-1627704671340-0969d7dba-h_ma49xzt0.jpg" alt="">
+        @-webkit-keyframes animationClosing {
+          0% {
+            height: 14rem;
+            opacity: 1;
+          }
+          30% {
+            height: 14rem;
+            opacity: 0.5;
+          }
+          100% {
+            height: 0;
+            opacity: 0;
+          }
+        }
+        @-moz-keyframes animationClosing {
+          0% {
+            height: 14rem;
+            opacity: 1;
+          }
+          30% {
+            height: 14rem;
+            opacity: 0.5;
+          }
+          100% {
+            height: 0;
+            opacity: 0;
+          }
+        }
+        @-o-keyframes animationClosing {
+          0% {
+            height: 14rem;
+            opacity: 1;
+          }
+          30% {
+            height: 14rem;
+            opacity: 0.5;
+          }
+          100% {
+            height: 0;
+            opacity: 0;
+          }
+        }
+        @keyframes animationClosing {
+          0% {
+            height: 14rem;
+            opacity: 1;
+          }
+          30% {
+            height: 14rem;
+            opacity: 0.5;
+          }
+          100% {
+            height: 0;
+            opacity: 0;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <section
+      data-bs-version="5.1"
+      class="menu menu2 cid-uJSrOkOEyE"
+      once="menu"
+      id="menu-5-uJSrOkOEyE"
+    >
+      <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+        <div class="container">
+          <div class="navbar-brand">
+            <span class="navbar-logo">
+              <a href="#">
+                <img
+                  src="web_files/photo-1732881112067-aa3e9ece2-h_ma49wziz.jpg"
+                  alt=""
+                  style="height: 4.3rem"
+                />
+              </a>
+            </span>
+            <span class="navbar-caption-wrap">
+              <a
+                class="navbar-caption text-black display-4"
+                href="index.html"
+                autocomplete="off"
+              >
+                COSSEE
+              </a>
+            </span>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-bs-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
             </div>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+              <li class="nav-item">
+                <a
+                  class="nav-link link text-black display-4"
+                  href="people.html"
+                >
+                  People
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link link text-black display-4"
+                  href="research.html"
+                  aria-expanded="false"
+                >
+                  Research
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link link text-black display-4"
+                  href="publications.html"
+                  aria-expanded="false"
+                  autocomplete="off"
+                >
+                  Publications
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link link text-black display-4" href="blog.html">
+                  Blog
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link link text-black display-4"
+                  href="open-sciences.html"
+                  autocomplete="off"
+                >
+                  Open Science
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link link text-black display-4"
+                  href="opportunities.html"
+                  autocomplete="off"
+                >
+                  Opportunities
+                </a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link link text-black display-4"
+                  href="links.html"
+                  autocomplete="off"
+                >
+                  Links
+                </a>
+              </li>
+            </ul>
+
+            <div class="navbar-buttons mbr-section-btn">
+              <a class="btn btn-primary display-4" href="#" autocomplete="off">
+                Log In
+              </a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section
+      data-bs-version="5.1"
+      class="header18 cid-uJSrOkQqdL mbr-fullscreen"
+      data-bg-video="web_files/vid1.mp4"
+    >
+      <div
+        class="mbr-overlay"
+        style="opacity: 0.5; background-color: rgb(0, 0, 0)"
+      ></div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="content-wrap col-12 col-md-12">
+            <h1
+              class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1"
+            >
+              <strong>
+                Centre for Open Science and Synthesis in Ecology and Evolution
+              </strong>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      data-bs-version="5.1"
+      class="header12 cid-uJSrOkRFm1"
+      id="call-to-action-8-uJSrOkRFm1"
+    >
+      <div class="text-center container">
+        <div class="row mb-4 justify-content-center">
+          <div class="col-12 col-md-4">
+            <img
+              src="web_files/photo-1627704671340-0969d7dba-h_ma49xzt0.jpg"
+              alt=""
+            />
+          </div>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-12 content-head">
-                <h1 class="mbr-section-title mbr-fonts-style mb-4 display-2">
-                    <strong>Join COSSEE</strong>
-                </h1>
-                <div class="mbr-section-btn mt-4"><a class="btn btn-primary display-7" href="opportunities.html" autocomplete="off">Postdoc and MSc Opportunities</a></div>
+          <div class="col-md-12 content-head">
+            <h1 class="mbr-section-title mbr-fonts-style mb-4 display-2">
+              <strong>Join COSSEE</strong>
+            </h1>
+            <div class="mbr-section-btn mt-4">
+              <a
+                class="btn btn-primary display-7"
+                href="opportunities.html"
+                autocomplete="off"
+              >
+                Postdoc and MSc Opportunities
+              </a>
             </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="article8 cid-uJSrOkRC5j" id="about-us-8-uJSrOkRC5j">
-  
-
-  
-  
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="card col-md-12 col-lg-10">
-        <div class="card-wrapper">
-          <div class="image-wrapper d-flex justify-content-center mb-4">
-            <img src="web_files/photo-1732881112419-ca9ce3b85-h_ma49zwb8.jpg" alt="">
           </div>
-          <div class="card-content-text">
-            <h3 class="card-title mbr-fonts-style mbr-white mt-3 mb-4 display-2">
-            <strong>About COSSEE</strong></h3>
-          <div class="row card-box align-left">
+        </div>
+      </div>
+    </section>
+
+    <section
+      data-bs-version="5.1"
+      class="article8 cid-uJSrOkRC5j"
+      id="about-us-8-uJSrOkRC5j"
+    >
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="card col-md-12 col-lg-10">
+            <div class="card-wrapper">
+              <div class="image-wrapper d-flex justify-content-center mb-4">
+                <img
+                  src="web_files/photo-1732881112419-ca9ce3b85-h_ma49zwb8.jpg"
+                  alt=""
+                />
+              </div>
+              <div class="card-content-text">
+                <h3
+                  class="card-title mbr-fonts-style mbr-white mt-3 mb-4 display-2"
+                >
+                  <strong>About COSSEE</strong>
+                </h3>
+                <div class="row card-box align-left">
+                  <div class="item features-without-image col-12">
+                    <div class="item-wrapper">
+                      <p class="mbr-text mbr-fonts-style display-7">
+                        In our research, we test a wide range of scientific
+                        hypotheses using organisms from different taxa. We work
+                        in collaboration with many other researchers from this
+                        department, other departments and from other
+                        universities all over the world. We strive to publish
+                        high quality research papers, both experimental and
+                        reviews with particular focus on meta-analysis and
+                        comparative analysis. Further, we promote scientific
+                        transparency and reproducibility, especially in the
+                        field of Ecology and evolution (see TEE and SORTEE). And
+                        we are also a part of European Thermal Fertility
+                        Network.
+                        <br />
+                        <br />
+                        The group is a continuation of the SN Behavioural
+                        Ecology Group, which was originally founded at the
+                        arrival of Shinichi Nakagawa (SN) to the Department of
+                        Zoology, the University of Otago, New Zealand, in 2008.
+                        Shinichi moved to the School of Biological, Earth and
+                        Environmental Sciences (BEES), the University of New
+                        South Wales (UNSW), Sydney, Australia, in February 2015.
+                        We will be relocating to University of Alberta,
+                        Edmonton, Canada in 2024 (although we will be at both
+                        Sydney and Edmonton till 2025).
+                        <br />
+                        <br />
+                        ​Because nowadays our research focus is not just on
+                        behavioural ecology, as we are constantly crossing
+                        boundaries to other related disciplines, and is co-led
+                        by Malgorzata Lagisz, we decided to give our group a
+                        more appropriate name. Hence I-DEEL: Inter-Disciplinary
+                        Ecology and Evolution Lab (How to join COSSEE?).
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      data-bs-version="5.1"
+      class="features023 cid-uJSrOkSsVt"
+      id="metrics-1-uJSrOkSsVt"
+    >
+      <div class="container">
+        <div class="row content-row justify-content-center">
+          <div
+            class="item features-without-image col-12 col-md-6 col-lg-4 item-mb"
+          >
+            <div class="item-wrapper">
+              <div class="title mb-2 mb-md-3">
+                <span class="num mbr-fonts-style display-1">
+                  <strong>999</strong>
+                </span>
+              </div>
+              <h4 class="card-title mbr-fonts-style display-5">
+                <strong>cool stat</strong>
+              </h4>
+            </div>
+          </div>
+          <div
+            class="item features-without-image col-12 col-md-6 col-lg-4 item-mb"
+          >
+            <div class="item-wrapper">
+              <div class="title mb-2 mb-md-3">
+                <span class="num mbr-fonts-style display-1">
+                  <strong>999</strong>
+                </span>
+              </div>
+              <h4 class="card-title mbr-fonts-style display-5">
+                <strong>cool stat</strong>
+              </h4>
+            </div>
+          </div>
+          <div
+            class="item features-without-image col-12 col-md-6 col-lg-4 item-mb"
+          >
+            <div class="item-wrapper">
+              <div class="title mb-2 mb-md-3">
+                <span class="num mbr-fonts-style display-1">
+                  <strong>999</strong>
+                </span>
+              </div>
+              <h4 class="card-title mbr-fonts-style display-5">
+                <strong>cool stat</strong>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      data-bs-version="5.1"
+      class="features03 cid-uJSrOkSQ5o"
+      id="news-1-uJSrOkSQ5o"
+    >
+      <div class="container-fluid">
+        <div class="row justify-content-center mb-5">
+          <div class="col-12 content-head">
+            <div class="mbr-section-head">
+              <h4
+                class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"
+              >
+                <strong>Lab News</strong>
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="item features-image col-12 col-md-6 col-lg-3 active">
+            <div class="item-wrapper">
+              <div class="item-img mb-3">
+                <img
+                  src="web_files/photo-1734444846614-dc5f19832-h_ma4a42tl.jpg"
+                  alt=""
+                  title=""
+                />
+              </div>
+              <div class="item-content align-left">
+                <h5 class="item-title mbr-fonts-style mt-0 mb-2 display-5">
+                  <strong>Text</strong>
+                </h5>
+                <p class="mbr-text mbr-fonts-style mb-3 display-7">date</p>
+                <p class="mbr-text mbr-fonts-style mb-3 display-7">text</p>
+                <div class="mbr-section-btn item-footer">
+                  <a
+                    href=""
+                    class="btn item-btn btn-primary display-7"
+                    autocomplete="off"
+                  >
+                    Read
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item features-image col-12 col-md-6 col-lg-3">
+            <div class="item-wrapper">
+              <div class="item-img mb-3">
+                <img
+                  src="web_files/photo-1580377968562-5f0225d15-h_ma4a4hhb.jpg"
+                  alt=""
+                  title=""
+                  data-slide-to="1"
+                  data-bs-slide-to="1"
+                />
+              </div>
+              <div class="item-content align-left">
+                <h5 class="item-title mbr-fonts-style mb-2 mt-0 display-5">
+                  <strong>Text</strong>
+                </h5>
+                <p class="mbr-text mbr-fonts-style mb-3 display-7">date</p>
+                <p class="mbr-text mbr-fonts-style mb-3 display-7">text</p>
+                <div class="mbr-section-btn item-footer">
+                  <a
+                    href=""
+                    class="btn item-btn btn-primary display-7"
+                    autocomplete="off"
+                  >
+                    Read
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item features-image col-12 col-md-6 col-lg-3">
+            <div class="item-wrapper">
+              <div class="item-img mb-3">
+                <img
+                  src="web_files/photo-1614169270948-e1b4294cd-h_ma4a4m89.jpg"
+                  alt=""
+                  title=""
+                  data-slide-to="2"
+                  data-bs-slide-to="2"
+                />
+              </div>
+              <div class="item-content align-left">
+                <h5 class="item-title mbr-fonts-style mb-2 mt-0 display-5">
+                  <strong>Text</strong>
+                </h5>
+                <p class="mbr-text mbr-fonts-style mb-3 display-7">date</p>
+                <p class="mbr-text mbr-fonts-style mb-3 display-7">text</p>
+                <div class="mbr-section-btn item-footer">
+                  <a
+                    href=""
+                    class="btn item-btn btn-primary display-7"
+                    autocomplete="off"
+                  >
+                    Read
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="item features-image col-12 col-md-6 col-lg-3">
+            <div class="item-wrapper">
+              <div class="item-img mb-3">
+                <img
+                  src="web_files/photo-1709227371218-35ef4d1d9-h_ma4a4rpt.jpg"
+                  alt=""
+                  title=""
+                  data-slide-to="2"
+                  data-bs-slide-to="2"
+                />
+              </div>
+              <div class="item-content align-left">
+                <h5 class="item-title mbr-fonts-style mb-2 mt-0 display-5">
+                  <strong>Text</strong>
+                </h5>
+                <p class="mbr-text mbr-fonts-style mb-3 display-7">date</p>
+                <p class="mbr-text mbr-fonts-style mb-3 display-7">text</p>
+                <div class="mbr-section-btn item-footer">
+                  <a
+                    href=""
+                    class="btn item-btn btn-primary display-7"
+                    autocomplete="off"
+                  >
+                    Read
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      data-bs-version="5.1"
+      class="header18 cid-uJSrOkSpjv mbr-fullscreen"
+      data-bg-video="web_files/vid2.mp4"
+    >
+      <div
+        class="mbr-overlay"
+        style="opacity: 0.3; background-color: rgb(0, 0, 0)"
+      ></div>
+      <div class="container-fluid">
+        <div class="row"></div>
+      </div>
+    </section>
+
+    <section
+      data-bs-version="5.1"
+      class="gallery10 cid-uJSrOkSQAt"
+      id="features-61-uJSrOkSQAt"
+    >
+      <div class="container-fluid">
+        <div class="loop-container">
+          <div
+            class="item display-1"
+            data-linewords="* Ecology and Evolution * Open Science * Research Synthesis * Data Analysis *"
+            data-direction="-1"
+            data-speed="0.05"
+          ></div>
+
+          <div
+            class="item display-1"
+            data-linewords="*  Ecology and Evolution * Open Science * Research Synthesis * Data Analysis *"
+            data-direction="-1"
+            data-speed="0.05"
+          ></div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      data-bs-version="5.1"
+      class="image02 cid-uJSrOkSL1s mbr-fullscreen mbr-parallax-background"
+      id="image-13-uJSrOkSL1s"
+    >
+      <div class="container">
+        <div class="row"></div>
+      </div>
+    </section>
+
+    <section
+      data-bs-version="5.1"
+      class="gallery07 cid-uJSrOkSXKD"
+      id="gallery-16-uJSrOkSXKD"
+    >
+      <div class="container-fluid gallery-wrapper">
+        <div class="row justify-content-center">
+          <div class="col-12 content-head">
+            <div class="mbr-section-head mb-5">
+              <h4
+                class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"
+              >
+                <strong>Lab Photo Gallery</strong>
+              </h4>
+            </div>
+          </div>
+        </div>
+        <div class="grid-container">
+          <div
+            class="grid-container-3 moving-left"
+            style="transform: translate3d(-200px, 0px, 0px)"
+          >
+            <div class="grid-item">
+              <img
+                src="web_files/photo-1627817471035-3333a9ece-h_ma4a8u0c.jpg"
+                alt=""
+              />
+            </div>
+            <div class="grid-item">
+              <img
+                src="web_files/photo-1714844437236-de8ef1c72-h_ma4a901g.jpg"
+                alt=""
+              />
+            </div>
+            <div class="grid-item">
+              <img
+                src="web_files/photo-1614308460927-5024ba2e1-h_ma4a9799.jpg"
+                alt=""
+              />
+            </div>
+            <div class="grid-item">
+              <img
+                src="web_files/images/photo-1709227371446-8e76f7526-h_ma4a9gdd.jpg"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      data-bs-version="5.1"
+      class="list05 cid-uJSrOkTveP"
+      id="faq-3-uJSrOkTveP"
+    >
+      <div class="container">
+        <div class="col-12 mb-5 content-head">
+          <h3
+            class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"
+          >
+            <strong>Frequently Asked Questions</strong>
+          </h3>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-12 col-lg-8">
+            <div class="item features-without-image col-12 active">
+              <div class="item-wrapper">
+                <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                  <strong>What is the lab's moto?</strong>
+                </h5>
+                <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">
+                  Our group follows three basic mottos, plus a new one:
+                  <br />
+                  <br />
+                  1. Questions drive our research.
+                  <br />
+                  2. Follow the best open Science practices.
+                  <br />
+                  3. Complete the cycle if you are going to do it at all (the
+                  cycle = conceiving an idea, carrying out a study and writing
+                  results up for publication).
+                  <br />
+                  4. Skills have become more important than knowledge; the four
+                  "musts" are to learn:
+                  <br />
+                  1) how to use Google,
+                  <br />
+                  2) how to use R,
+                  <br />
+                  3) how to write (writing is hard, so write every day), and
+                  <br />
+                  ​4) how to collaborate and listen to others.
+                </p>
+              </div>
+            </div>
+
             <div class="item features-without-image col-12">
               <div class="item-wrapper">
-                
-                <p class="mbr-text mbr-fonts-style display-7">In our research, we test a wide range of scientific hypotheses using organisms from different taxa. We work in collaboration with many other researchers from this department, other departments and from other universities all over the world. We strive to publish high quality research papers, both experimental and reviews with particular focus on meta-analysis and comparative analysis. Further, we promote scientific transparency and reproducibility, especially in the field of Ecology and evolution (see TEE and SORTEE). And we are also a part of European Thermal Fertility Network.
-<br>
-<br>The group is a continuation of the SN Behavioural Ecology Group, which was originally founded at the arrival of Shinichi Nakagawa (SN) to the Department of Zoology, the University  of Otago, New Zealand, in 2008. Shinichi moved to the School of Biological, Earth and Environmental Sciences (BEES), the University of New South Wales (UNSW), Sydney, Australia, in February 2015. We will be relocating to University of Alberta, Edmonton, Canada in 2024 (although we will be at both Sydney and Edmonton till 2025).
-<br>
-<br>​Because nowadays our research focus is not just on behavioural ecology, as we are constantly crossing boundaries to other related disciplines, and is co-led by Malgorzata Lagisz, we decided to give our group a more appropriate name. Hence I-DEEL: Inter-Disciplinary Ecology and Evolution Lab (How to join COSSEE?).</p>
+                <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
+                  <strong>Equity, Diversity, and Inclusion Statement</strong>
+                </h5>
+                <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">
+                  Our Lab is committed to ensuring a safe, friendly, and
+                  accepting environment for everybody. We will not tolerate any
+                  verbal or physical harassment or discrimination on the basis
+                  of gender, gender identity and expression, sexual orientation,
+                  disability, physical appearance, body size, race, ethnicity,
+                  religion, family status, socio-educational, or financial
+                  backgrounds. We welcome people of all backgrounds in our Lab.
+                </p>
               </div>
             </div>
-            
-            
-            
-          </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<section data-bs-version="5.1" class="features023 cid-uJSrOkSsVt" id="metrics-1-uJSrOkSsVt">
-
-    
-
-    
-    
-    <div class="container">
-        
-        <div class="row content-row justify-content-center">
-            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
-                <div class="item-wrapper">
-                    <div class="title mb-2 mb-md-3">
-                        <span class="num mbr-fonts-style display-1"><strong>999</strong></span>
-                    </div>
-                    <h4 class="card-title mbr-fonts-style display-5"><strong>cool stat</strong></h4>
-                    
-                </div>
-            </div>
-            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
-                <div class="item-wrapper">
-                    <div class="title mb-2 mb-md-3">
-                        <span class="num mbr-fonts-style display-1">
-                            <strong>999</strong></span>
-                    </div>
-                    <h4 class="card-title mbr-fonts-style display-5">
-                        <strong>cool stat</strong></h4>
-                    
-                </div>
-            </div>
-            <div class="item features-without-image col-12 col-md-6 col-lg-4 item-mb">
-                <div class="item-wrapper">
-                    <div class="title mb-2 mb-md-3">
-                        <span class="num mbr-fonts-style display-1">
-                            <strong>999</strong></span>
-                    </div>
-                    <h4 class="card-title mbr-fonts-style display-5">
-                        <strong>cool stat</strong></h4>
-                    
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="features03 cid-uJSrOkSQ5o" id="news-1-uJSrOkSQ5o">
-  
-  
-  <div class="container-fluid">
-    <div class="row justify-content-center mb-5">
-      <div class="col-12 content-head">
-        <div class="mbr-section-head">
-          <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
-            <strong>Lab News</strong>
-          </h4>
-          
-        </div>
-      </div>
-    </div>
-    <div class="row">
-      <div class="item features-image col-12 col-md-6 col-lg-3 active">
-        <div class="item-wrapper">
-          <div class="item-img mb-3">
-            <img src="web_files/photo-1734444846614-dc5f19832-h_ma4a42tl.jpg" alt="" title="">
-          </div>
-          <div class="item-content align-left">
-            <h5 class="item-title mbr-fonts-style mt-0 mb-2 display-5">
-              <strong>Text</strong></h5>
-            <p class="mbr-text mbr-fonts-style mb-3 display-7">date</p>
-            <p class="mbr-text mbr-fonts-style mb-3 display-7">text</p>
-            <div class="mbr-section-btn item-footer"><a href="" class="btn item-btn btn-primary display-7" autocomplete="off">Read</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="item features-image col-12 col-md-6 col-lg-3">
-        <div class="item-wrapper">
-          <div class="item-img mb-3">
-            <img src="web_files/photo-1580377968562-5f0225d15-h_ma4a4hhb.jpg" alt="" title="" data-slide-to="1" data-bs-slide-to="1">
-          </div>
-          <div class="item-content align-left">
-            <h5 class="item-title mbr-fonts-style mb-2 mt-0 display-5">
-              <strong>Text</strong></h5>
-            <p class="mbr-text mbr-fonts-style mb-3 display-7">date</p>
-            <p class="mbr-text mbr-fonts-style mb-3 display-7">text</p>
-            <div class="mbr-section-btn item-footer"><a href="" class="btn item-btn btn-primary display-7" autocomplete="off">Read</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="item features-image col-12 col-md-6 col-lg-3">
-        <div class="item-wrapper">
-          <div class="item-img mb-3">
-            <img src="web_files/photo-1614169270948-e1b4294cd-h_ma4a4m89.jpg" alt="" title="" data-slide-to="2" data-bs-slide-to="2">
-          </div>
-          <div class="item-content align-left">
-            <h5 class="item-title mbr-fonts-style mb-2 mt-0 display-5">
-              <strong>Text</strong></h5>
-            <p class="mbr-text mbr-fonts-style mb-3 display-7">date</p>
-            <p class="mbr-text mbr-fonts-style mb-3 display-7">text</p>
-            <div class="mbr-section-btn item-footer"><a href="" class="btn item-btn btn-primary display-7" autocomplete="off">Read</a></div>
-          </div>
-        </div>
-      </div>
-      <div class="item features-image col-12 col-md-6 col-lg-3">
-        <div class="item-wrapper">
-          <div class="item-img mb-3">
-            <img src="web_files/photo-1709227371218-35ef4d1d9-h_ma4a4rpt.jpg" alt="" title="" data-slide-to="2" data-bs-slide-to="2">
-          </div>
-          <div class="item-content align-left">
-            <h5 class="item-title mbr-fonts-style mb-2 mt-0 display-5">
-              <strong>Text</strong></h5>
-            <p class="mbr-text mbr-fonts-style mb-3 display-7">date</p>
-            <p class="mbr-text mbr-fonts-style mb-3 display-7">text</p>
-            <div class="mbr-section-btn item-footer"><a href="" class="btn item-btn btn-primary display-7" autocomplete="off">Read</a></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section data-bs-version="5.1" class="header18 cid-uJSrOkSpjv mbr-fullscreen" data-bg-video="web_files/vid2.mp4">
-  
-
-  <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(0, 0, 0);"></div>
-  <div class="container-fluid">
-    <div class="row">
-    </div>
-  </div>
-</section>
-
-<section data-bs-version="5.1" class="gallery10 cid-uJSrOkSQAt" id="features-61-uJSrOkSQAt">
-  
-
-
-  <div class="container-fluid">
-
-      <div class="loop-container">
-        <div class="item display-1" data-linewords="* Ecology and Evolution * Open Science * Research Synthesis * Data Analysis *" data-direction="-1" data-speed="0.05"></div>
-
-        <div class="item display-1" data-linewords="*  Ecology and Evolution * Open Science * Research Synthesis * Data Analysis *" data-direction="-1" data-speed="0.05"></div>
-      </div>
-    
-  </div>
-</section>
-
-<section data-bs-version="5.1" class="image02 cid-uJSrOkSL1s mbr-fullscreen mbr-parallax-background" id="image-13-uJSrOkSL1s">
-    
-    
-    <div class="container">
-        <div class="row"></div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="gallery07 cid-uJSrOkSXKD" id="gallery-16-uJSrOkSXKD">
-  
-  
-  <div class="container-fluid gallery-wrapper">
-    <div class="row justify-content-center">
-      <div class="col-12 content-head">
-        <div class="mbr-section-head mb-5">
-          <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
-            <strong>Lab Photo Gallery</strong>
-          </h4>
-          
-        </div>
-      </div>
-    </div>
-    <div class="grid-container">
-      <div class="grid-container-3 moving-left" style="transform: translate3d(-200px, 0px, 0px);">
-        <div class="grid-item">
-          <img src="web_files/photo-1627817471035-3333a9ece-h_ma4a8u0c.jpg" alt="">
-        </div>
-        <div class="grid-item">
-          <img src="web_files/photo-1714844437236-de8ef1c72-h_ma4a901g.jpg" alt="">
-        </div>
-        <div class="grid-item">
-          <img src="web_files/photo-1614308460927-5024ba2e1-h_ma4a9799.jpg" alt="">
-        </div>
-        <div class="grid-item">
-          <img src="web_files/images/photo-1709227371446-8e76f7526-h_ma4a9gdd.jpg" alt="">
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section data-bs-version="5.1" class="list05 cid-uJSrOkTveP" id="faq-3-uJSrOkTveP">
-    
-    <div class="container">
-        <div class="col-12 mb-5 content-head">
-            <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
-                <strong>Frequently Asked Questions</strong>
-            </h3>
-            
-        </div>
-        <div class="row justify-content-center ">
-            <div class="col-12 col-lg-8">
-                <div class="item features-without-image col-12 active">
-                    <div class="item-wrapper">
-                        <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5">
-                            <strong>What is the lab's moto?</strong></h5>
-                        <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">Our group follows three basic mottos, plus a new one:
-<br>
-<br>1. Questions drive our research.
-<br>2. Follow the best open Science practices.
-<br>3. Complete the cycle if you are going to do it at all (the cycle = conceiving an idea, carrying out a study and writing results up for publication).
-<br>4.  Skills have become more important than knowledge; the four "musts" are to learn:
-<br>    1) how to use Google,
-<br>    2) how to use R,
-<br>    3) how to write (writing is hard, so write every day), and
-<br>​4) how to collaborate and listen to others.</p>
-                    </div>
-                </div>
-
-              <div class="item features-without-image col-12">
-                <div class="item-wrapper">
-                    <h5 class="mbr-card-title mbr-fonts-style mt-0 mb-3 display-5"><strong>Equity, Diversity, and Inclusion Statement</strong></h5>
-                    <p class="mbr-text mbr-fonts-style mt-0 mb-3 display-7">Our Lab is committed to ensuring a safe, friendly, and accepting environment for everybody. We will not tolerate any verbal or physical harassment or discrimination on the basis of gender, gender identity and expression, sexual orientation, disability, physical appearance, body size, race, ethnicity, religion, family status, socio-educational, or financial backgrounds. We welcome people of all backgrounds in our Lab.</p>
-                </div>
-            </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="social4 cid-uJSrOkTUUx" id="follow-us-1-uJSrOkTUUx">
-    
-    
-    
-
-    <div class="container">
+    <section
+      data-bs-version="5.1"
+      class="social4 cid-uJSrOkTUUx"
+      id="follow-us-1-uJSrOkTUUx"
+    >
+      <div class="container">
         <div class="media-container-row">
-            <div class="col-12">
-                <h3 class="mbr-section-title align-center mb-5 mbr-fonts-style display-2">
-                    <strong>Connect With COSSEE</strong>
-                </h3>
-                <div class="social-list align-center">
-                    <a class="iconfont-wrapper bg-facebook m-2 " target="_blank" href="#">
-                        <span class="socicon-facebook socicon"></span>
-                    </a>
-                    <a class="iconfont-wrapper bg-twitter m-2" href="#" target="_blank">
-                        <span class="socicon-twitter socicon"></span>
-                    </a>
-                    <a class="iconfont-wrapper bg-instagram m-2" href="#" target="_blank">
-                        <span class="socicon-instagram socicon"></span>
-                    </a>
-                    
-                    
-                    
-                    
-                    
-                    <a class="iconfont-wrapper bg-tiktok m-2" href="#" target="_blank">
-                        <span class="socicon-tiktok socicon"></span>
-                    </a>
-                    
-                    
-                </div>
+          <div class="col-12">
+            <h3
+              class="mbr-section-title align-center mb-5 mbr-fonts-style display-2"
+            >
+              <strong>Connect With COSSEE</strong>
+            </h3>
+            <div class="social-list align-center">
+              <a
+                class="iconfont-wrapper bg-facebook m-2"
+                target="_blank"
+                href="#"
+              >
+                <span class="socicon-facebook socicon"></span>
+              </a>
+              <a
+                class="iconfont-wrapper bg-twitter m-2"
+                href="#"
+                target="_blank"
+              >
+                <span class="socicon-twitter socicon"></span>
+              </a>
+              <a
+                class="iconfont-wrapper bg-instagram m-2"
+                href="#"
+                target="_blank"
+              >
+                <span class="socicon-instagram socicon"></span>
+              </a>
+
+              <a
+                class="iconfont-wrapper bg-tiktok m-2"
+                href="#"
+                target="_blank"
+              >
+                <span class="socicon-tiktok socicon"></span>
+              </a>
             </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-<section data-bs-version="5.1" class="contacts01 cid-uJSrOkUBVv" id="contacts-1-uJSrOkUBVv">
-    
-
-    
-    
-    <div class="container">
+    <section
+      data-bs-version="5.1"
+      class="contacts01 cid-uJSrOkUBVv"
+      id="contacts-1-uJSrOkUBVv"
+    >
+      <div class="container">
         <div class="row justify-content-center">
-            <div class="col-12 content-head">
-                <div class="mbr-section-head mb-5">
-                    <h3 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>Contact Us<br>Prof Shinichi Nakagawa</strong></h3>
-                    
-                </div>
+          <div class="col-12 content-head">
+            <div class="mbr-section-head mb-5">
+              <h3
+                class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"
+              >
+                <strong>
+                  Contact Us
+                  <br />
+                  Prof Shinichi Nakagawa
+                </strong>
+              </h3>
             </div>
+          </div>
         </div>
         <div class="row">
-            <div class="item features-without-image col-12 col-md-6 active">
-                <div class="item-wrapper">
-                    <div class="text-wrapper">
-                        <h6 class="card-title mbr-fonts-style mb-3 display-5">
-                            <strong>Phone</strong>
-                        </h6>
-                        <p class="mbr-text mbr-fonts-style display-7">000-000-000</p>
-                    </div>
-                </div>
-            </div>
-            <div class="item features-without-image col-12 col-md-6">
-                <div class="item-wrapper">
-                    <div class="text-wrapper">
-                        <h6 class="card-title mbr-fonts-style mb-3 display-5">
-                            <strong>Email</strong>
-                        </h6>
-                        <p class="mbr-text mbr-fonts-style display-7">email</p>
-                    </div>
-                </div>
-            </div>
-            <div class="item features-without-image col-12 col-md-6">
-                <div class="item-wrapper">
-                    <div class="text-wrapper">
-                        <h6 class="card-title mbr-fonts-style mb-3 display-5">
-                            <strong>Address</strong>
-                        </h6>
-                        <p class="mbr-text mbr-fonts-style display-7">address</p>
-                    </div>
-                </div>
-            </div>
-            <div class="item features-without-image col-12 col-md-6">
-                <div class="item-wrapper">
-                    <div class="text-wrapper">
-                        <h6 class="card-title mbr-fonts-style mb-3 display-5">
-                            <strong>Work Hours</strong>
-                        </h6>
-                        <p class="mbr-text mbr-fonts-style display-7">Mon-Fri: 9am - 5pm</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section data-bs-version="5.1" class="footer3 cid-uJSrOkUoKf" once="footers" id="footer-6-uJSrOkUoKf">
-
-        
-
-    
-
-    <div class="container">
-        <div class="row">
-            <div class="row-links">
-                <ul class="header-menu">
-                  
-                  
-                  
-                  
-                <li class="header-menu-item mbr-fonts-style display-5">
-                    <a href="index.html" class="text-white">Home</a>
-                  </li><li class="header-menu-item mbr-fonts-style display-5">
-                    <a href="people.html" class="text-white">People</a>
-                  </li><li class="header-menu-item mbr-fonts-style display-5">
-                    <a href="research.html" class="text-white">Research</a>
-                  </li><li class="header-menu-item mbr-fonts-style display-5">
-                    <a href="publications.html" class="text-white">Publications</a>
-                  </li><li class="header-menu-item mbr-fonts-style display-5">
-                    <a href="blog.html" class="text-white">Blog</a>
-                  </li><li class="header-menu-item mbr-fonts-style display-5">
-                    <a href="open-sciences.html" class="text-white">Open Science</a>
-                  </li><li class="header-menu-item mbr-fonts-style display-5">
-                    <a href="opportunities.html" class="text-white">Opportunities</a>
-                  </li><li class="header-menu-item mbr-fonts-style display-5">
-                    <a href="links.html" class="text-white">Links</a>
-                  </li></ul>
+          <div class="item features-without-image col-12 col-md-6 active">
+            <div class="item-wrapper">
+              <div class="text-wrapper">
+                <h6 class="card-title mbr-fonts-style mb-3 display-5">
+                  <strong>Phone</strong>
+                </h6>
+                <p class="mbr-text mbr-fonts-style display-7">000-000-000</p>
               </div>
-
-            
-            <div class="col-12 mt-4">
-                <p class="mbr-fonts-style copyright display-7">© 2025 COSSEE Lab. All rights reserved.</p>
             </div>
+          </div>
+          <div class="item features-without-image col-12 col-md-6">
+            <div class="item-wrapper">
+              <div class="text-wrapper">
+                <h6 class="card-title mbr-fonts-style mb-3 display-5">
+                  <strong>Email</strong>
+                </h6>
+                <p class="mbr-text mbr-fonts-style display-7">email</p>
+              </div>
+            </div>
+          </div>
+          <div class="item features-without-image col-12 col-md-6">
+            <div class="item-wrapper">
+              <div class="text-wrapper">
+                <h6 class="card-title mbr-fonts-style mb-3 display-5">
+                  <strong>Address</strong>
+                </h6>
+                <p class="mbr-text mbr-fonts-style display-7">address</p>
+              </div>
+            </div>
+          </div>
+          <div class="item features-without-image col-12 col-md-6">
+            <div class="item-wrapper">
+              <div class="text-wrapper">
+                <h6 class="card-title mbr-fonts-style mb-3 display-5">
+                  <strong>Work Hours</strong>
+                </h6>
+                <p class="mbr-text mbr-fonts-style display-7">
+                  Mon-Fri: 9am - 5pm
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-</section>
+      </div>
+    </section>
 
-  <script src="js/1.js"></script>
-  <script src="js/2.js"></script>
-  <script src="js/3.js"></script>
-  <script src="js/4.js"></script>
-  <script src="js/5.js"></script>
-  <script src="js/6.js"></script>
-  <script src="js/7.js"></script>
-  <script src="js/8.js"></script>
-  <script src="js/9.js"></script>
-  
-  
-  
+    <section
+      data-bs-version="5.1"
+      class="footer3 cid-uJSrOkUoKf"
+      once="footers"
+      id="footer-6-uJSrOkUoKf"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="row-links">
+            <ul class="header-menu">
+              <li class="header-menu-item mbr-fonts-style display-5">
+                <a href="index.html" class="text-white">Home</a>
+              </li>
+              <li class="header-menu-item mbr-fonts-style display-5">
+                <a href="people.html" class="text-white">People</a>
+              </li>
+              <li class="header-menu-item mbr-fonts-style display-5">
+                <a href="research.html" class="text-white">Research</a>
+              </li>
+              <li class="header-menu-item mbr-fonts-style display-5">
+                <a href="publications.html" class="text-white">Publications</a>
+              </li>
+              <li class="header-menu-item mbr-fonts-style display-5">
+                <a href="blog.html" class="text-white">Blog</a>
+              </li>
+              <li class="header-menu-item mbr-fonts-style display-5">
+                <a href="open-sciences.html" class="text-white">Open Science</a>
+              </li>
+              <li class="header-menu-item mbr-fonts-style display-5">
+                <a href="opportunities.html" class="text-white">
+                  Opportunities
+                </a>
+              </li>
+              <li class="header-menu-item mbr-fonts-style display-5">
+                <a href="links.html" class="text-white">Links</a>
+              </li>
+            </ul>
+          </div>
 
-</body>
+          <div class="col-12 mt-4">
+            <p class="mbr-fonts-style copyright display-7">
+              © 2025 COSSEE Lab. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/1.js"></script>
+    <script src="js/2.js"></script>
+    <script src="js/3.js"></script>
+    <script src="js/4.js"></script>
+    <script src="js/5.js"></script>
+    <script src="js/6.js"></script>
+    <script src="js/7.js"></script>
+    <script src="js/8.js"></script>
+    <script src="js/9.js"></script>
+  </body>
 </html>
