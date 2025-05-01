@@ -15,8 +15,46 @@
   <link rel="preload" href="css/style9.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
   <noscript><link rel="stylesheet" href="css/style10.css"></noscript>
   <link rel="stylesheet" href="css/style11.css" />
+  <link rel="stylesheet" href="css/style12.css" type="text/css">
 
   <style>
+    .navbar-fixed-top {
+      top: auto;
+    }
+    
+    .navbar.opened {
+        z-index: 1032;
+    }
+    @-webkit-keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
+    @-moz-keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
+    @-o-keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
+       @keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
+    @-webkit-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
+    @-moz-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
+    @-o-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
+       @keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
+    
+    @-webkit-keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+    @-moz-keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+    @-o-keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+    @keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+    
+    @media(max-width: 575px) {
+    
+      @-webkit-keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
+      @-moz-keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
+      @-o-keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
+        @keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
+      @-webkit-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
+      @-moz-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
+      @-o-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
+        @keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
+    
+      @-webkit-keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+      @-moz-keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+      @-o-keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+      @keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+    }
     .tab-container {
       max-width: 1200px;
       margin: auto;
@@ -61,41 +99,74 @@
       font-style: italic;
       margin: 0;
     }
+    .page-section {
+      padding: 7rem 1rem 4rem;
+    }
+    .content-col {
+      padding: 1rem;
+    }
+    .content-col h3 {
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .content-col ul {
+      padding-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .content-col img {
+      max-width: 100%;
+      margin: 1rem 0;
+    }
+    .content-col img {
+        display: inline-block;
+        margin: 1rem auto;
+        height: auto; /* let height be flexible unless specified */
+        width: auto;  /* let width be flexible unless specified */
+        max-width: 100%; /* still responsive */
+    }
   </style>
 </head>
 <body>
-
-  <!-- NAVBAR -->
+    <!-- NAV BAR -->
   <section data-bs-version="5.1" class="menu menu2 cid-uJSrOkOEyE" once="menu" id="menu-5-uJSrOkOEyE">
-    <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
-      <div class="container">
-        <div class="navbar-brand">
-          <span class="navbar-logo">
-            <a href="index.html">
-              <img src="web_files/photo-1732881112067-aa3e9ece2-h_ma49wziz.jpg" alt="COSSEE Logo" style="height: 4.3rem;">
-            </a>
-          </span>
-          <span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="index.html">COSSEE</a></span>
-        </div>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent">
-          <div class="hamburger"><span></span><span></span><span></span><span></span></div>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav nav-dropdown">
-            <li class="nav-item"><a class="nav-link text-black display-4" href="people.html">People</a></li>
-            <li class="nav-item"><a class="nav-link text-black display-4" href="research.html">Research</a></li>
-            <li class="nav-item"><a class="nav-link text-black display-4" href="publications.html">Publications</a></li>
-            <li class="nav-item"><a class="nav-link text-black display-4" href="blog.html">Blog</a></li>
-            <li class="nav-item"><a class="nav-link text-black display-4" href="open-sciences.html">Open Science</a></li>
-            <li class="nav-item"><a class="nav-link text-black display-4" href="opportunities.html">Opportunities</a></li>
-            <li class="nav-item"><a class="nav-link text-black display-4" href="links.html">Links</a></li>
-          </ul>
-          <div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="#">Log In</a></div>
-        </div>
-      </div>
-    </nav>
-  </section>
+	
 
+	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+		<div class="container">
+			<div class="navbar-brand">
+				<span class="navbar-logo">
+					<a href="#">
+						<img src="web_files/photo-1732881112067-aa3e9ece2-h_ma49wziz.jpg" alt="" style="height: 4.3rem;">
+					</a>
+				</span>
+				<span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="index.html" autocomplete="off">COSSEE</a></span>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
+						<a class="nav-link link text-black display-4" href="people.html">People</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link text-black display-4" href="research.html" aria-expanded="false">Research</a>
+					</li><li class="nav-item"><a class="nav-link link text-black display-4" href="publications.html" aria-expanded="false" autocomplete="off">Publications</a></li>
+					<li class="nav-item">
+						<a class="nav-link link text-black display-4" href="blog.html">Blog</a>
+					</li><li class="nav-item"><a class="nav-link link text-black display-4" href="open-sciences.html" autocomplete="off">Open Science</a></li><li class="nav-item">
+            <a class="nav-link link text-black display-4" href="opportunities.html" autocomplete="off">Opportunities</a></li><li class="nav-item">
+              <a class="nav-link link text-black display-4" href="links.html" autocomplete="off">Links</a></li></ul>
+				
+				<div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="#" autocomplete="off">Log In</a></div>
+			</div>
+		</div>
+	</nav>
+</section>
   <!-- PEOPLE SECTION -->
   <section class="tab-container">
     <h2 class="display-2" style="text-align: center;"><strong>Meet the COSSEE Team</strong></h2>
@@ -116,7 +187,6 @@
 
     <div class="tab-content active" id="shinichi">
       <div class="person-card">
-        <img src="web_files/photo-person1.jpg" alt="Prof. Shinichi Nakagawa">
         <h4 class="display-5">Prof. Shinichi Nakagawa</h4>
         <p class="display-7">Professor</p>
       </div>
@@ -130,7 +200,7 @@
             
               
       
-      <h2 class="wsite-content-title" style="text-align:left;"><span style='text-decoration:none; font-style:normal; font-weight:400; color:rgb(80, 141, 36); '><span style="text-decoration:none; font-style:normal; font-weight:400; color:rgb(80, 141, 36); "><span style="text-decoration:none; font-style:normal; font-weight:400; color:rgb(80, 141, 36); "><span style="text-decoration:none; font-style:normal; font-weight:400; color:rgb(80, 141, 36); "><span style="text-decoration:none; font-style:normal; font-weight:400; color:rgb(80, 141, 36); "><span style="text-decoration:none; font-style:normal; font-weight:400; color:rgb(80, 141, 36); "><font size="6">Shinichi Nakagawa</font><br /></span></span></span></span></span></span></h2>
+      <h2 class="wsite-content-title" style="text-align:left;"><span style='text-decoration:none; font-style:normal; font-weight:400; color:rgb(80, 141, 36); '><span style="text-decoration:none; font-style:normal; font-weight:400; color:rgb(80, 141, 36); "><span style="text-decoration:none; font-style:normal; font-weight:400; color:rgb(80, 141, 36); "><span style="text-decoration:none; font-style:normal; font-weight:400; color:rgb(80, 141, 36); "><span style="text-decoration:none; font-style:normal; font-weight:400; color:rgb(80, 141, 36); "><span style="text-decoration:none; font-style:normal; font-weight:400; color:rgb(80, 141, 36); "><font size="6"></font><br /></span></span></span></span></span></span></h2>
       
       <div class="paragraph"><br /><span style="color: rgb(42, 42, 42); font-weight: 400;"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(81, 81, 81); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(142, 142, 142); font-weight:400"><span style="color:rgb(142, 142, 142); font-weight:400"><span style="color:rgb(142, 142, 142); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(142, 142, 142); font-weight:400"><span style="color:rgb(142, 142, 142); font-weight:400"><span style="color:rgb(142, 142, 142); font-weight:400"><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>Email: s(-dot-)</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>nakagawa(-at-)unsw(-dot-)edu</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span><span>(-dot-)</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span>au</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br /><br />Shinichi is a Professor&nbsp;of&nbsp; Evolutionary Biology &amp; Synthesis at E&amp;ERC and BEES, UNSW</div>
       
@@ -142,7 +212,7 @@
       
       <div><div class="wsite-image wsite-image-border-none " style="padding-top:0;padding-bottom:0;margin-left:0;margin-right:0;text-align:right">
       <a>
-      <img src="/uploads/5/2/4/1/52416001/13243.png" alt="Shinichi Nakagawa photo" style="width:auto;max-width:100%" />
+      <img src="web_files/13243.png" alt="Shinichi Nakagawa photo" style="width:auto;max-width:100%" />
       </a>
       <div style="display:block;font-size:90%"></div>
       </div></div>
@@ -156,10 +226,10 @@
       
       <span class='imgPusher' style='float:right;height:705px'></span><span style='display: table;width:auto;position:relative;float:right;max-width:100%;;clear:right;margin-top:20px;*margin-top:40px'><a><img src="/uploads/5/2/4/1/52416001/1433768688.png" style="margin-top: 0px; margin-bottom: 0px; margin-left: 10px; margin-right: 0px; border-width:0; max-width:100%" alt="Totoro poster" class="galleryImageBorder wsite-image" /></a><span style="display: table-caption; caption-side: bottom; font-size: 90%; margin-top: -0px; margin-bottom: 0px; text-align: center;" class="wsite-caption"></span></span>
       <div class="paragraph" style="text-align:left;display:block;"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400"><span style="color:rgb(42, 42, 42); font-weight:400">I was born in <a href="http://en.wikipedia.org/wiki/Nakano,_Nagano" target="_blank">Nagano</a> and brought up in <a href="http://en.wikipedia.org/wiki/Kasukabe,_Saitama" target="_blank">Saitama</a>, Japan. After turning 21, I went to New Zealand to see penguins. I did BSc (Hons) at the <a href="http://www.waikato.ac.nz/" target="_blank">University of Waikato</a>, New Zealand (2003) and PhD at the <a href="http://www.sheffield.ac.uk/aps/" target="_blank">University of Sheffield</a>, United Kingdom (2007). After a brief postdoc period, I got a job as lecturer at the <a href="http://www.otago.ac.nz/zoology/" target="_blank">University of Otago</a> (2008). In 2015, I moved to UNSW, Sydney. I love sleeping a lot during weekends and watching Japanese cartoons.<br />&#8203;</span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span></span><br /><font size="3" style="color:rgb(42, 42, 42); font-weight:400"><strong>Research Interests</strong></font><br /><br />My research interests are very diverse but usually fall into three categories: 1) <strong>Animal Behaviour</strong>, 2) <strong>Evolutionary Biology</strong> and 3) <strong>Applied Statistics</strong>. My main model organisms have primarily been birds (sparrows, dunnocks &nbsp;and penguins), but I have also worked with earthworms, amphipods, frogs and fish (to be honest, I prefer eating, rather than studying, the last model system). Between 2015-2020, our main experimental model was zebrafish in collaboration with Dr <a href="http://www.garvan.org.au/research/diabetes-metabolism/beta-cell-regeneration/danhes" target="_blank">Dan Hesselson</a> at the <a href="http://www.garvan.org.au/" target="_blank">Garvan Institute of Medical Research</a>. Now, our main system is fruit flies, while our main activity has become literature and data synthesis.<br /><br /><font size="3" style="color:rgb(42, 42, 42); font-weight:400"><strong>Past Work / Education</strong></font><br /><br />I used to study too hard during my days in Japan and I burnt out and wanted to escape. Then, New Zealand seemed to be a great place; they have penguins! Subsequently, I was very fortunate to do my BSc degree with Honours in Psychology and Biology at the <a href="http://www.waikato.ac.nz/" target="_blank">University of Waikato</a>, Hamilton, NZ under the supervision of <a href="http://sci.waikato.ac.nz/about-us/people/waasur" target="_blank">Prof Joe Waas</a> (Biological Sciences) and <a href="http://www.waikato.ac.nz/fass/about/staff/psyc0182" target="_blank">Prof Mary Foster</a> (Psychology). Joe basically taught me how to write in English (before that I was only able to write in Japanese). During my honour&rsquo;s time, I did several projects: 1) kin recognition in little penguins on <a href="http://www.tiritirimatangi.org.nz/" target="_blank">Tiritiri Matagi Island</a>, 2) testing a hormonal assay with Adelie penguins in Antarctica, and 3) studying memory of chickens in a happy lab. Then, I went to the UK to do a PhD at the <a href="http://www.sheffield.ac.uk/aps" target="_blank">University of Sheffield</a> under the supervision of <a href="https://www.shef.ac.uk/aps/staff-and-students/acadstaff/hatchwell" target="_blank">Prof Ben Hatchwell</a> and <a href="http://www.sheffield.ac.uk/molecol/terry-burke" target="_blank">Prof Terry Burke</a> (the best supervisor team for a PhD). For my PhD, I have been studying parental care in relation to male ornamentation (the badge of status) in house sparrows on <a href="http://en.wikipedia.org/wiki/Lundy" target="_blank">Lundy Island</a>. I carried on working with Lundy sparrows for a year as a postdoc. Then NZ claimed me back in 2008. After 7 years at the <a href="http://www.otago.ac.nz/zoology/index.html" target="_blank">University of Otago</a>, I am now at the <a href="http://www.eerc.unsw.edu.au/" target="_blank">Evolution &amp; Ecology Research Centre </a>(E&amp;ERC) and the&nbsp;<span><a href="http://www.bees.unsw.edu.au/">School of Biological, Earth and Environmental Sciences</a>&nbsp;(</span>BEES) at the UNSW, Sydney.&nbsp;<br /><br /><font size="3" style="color:rgb(42, 42, 42); font-weight:400"><strong>Current Research / Work</strong></font><br /><br />Here at UNSW, Sydney, &nbsp;I have developed several new lines of research focusing on three areas from evolutionary biological perspectives: 1) the developmental origins of heath and disease (DOHaD), 2) epi-genetics and trans-generational effects, and 3) phenotypic plasticity. We have been continuing to work on meta-analysis and comparative analysis and also on developing associated statistical methods. For a full list of our interests please have a look at the <a href="/research.html">Research</a> page. I also collaborate with many clever people around the world, so I can be as clever as they are (see the collaborations section at the <a href="/people.html">People</a>&nbsp;page).<br /><br /><font size="3" style="color:rgb(42, 42, 42); font-weight:400"><strong>Other Interests</strong></font><br /><br />I like cooking nice food and eating it with nice people (it is even nicer if my mum cooks the food, but she cannot visit me too often). I enjoy holding &lsquo;Temaki&rsquo; (do-it-yourself; DIY) sushi parties. Also, I love going to hot springs (shame, there are not many of them in Australia so I miss Japan where there are literally hundreds of <a href="http://en.wikipedia.org/wiki/Onsen" target="_blank">onsen</a> almost everywhere). In Sydney, with my two boys and wife, we have been explored the city and the neighbourhoods (e.g zoo,&nbsp;museums, parks). Sometimes, I like vegging out and watching Japanese cartoons &ndash; my favourite movie is &ldquo;<a href="http://en.wikipedia.org/wiki/My_Neighbor_Totoro" target="_blank">My Neighbour Totoro</a>&rdquo;.<br /><br /><strong><font size="3">Publications</font></strong><br /><br />See the <a href="/publications.html">Publications</a> page for the list of my peer-reviewed articles and other contributions.<br /><br /><font size="3" style="color:rgb(42, 42, 42); font-weight:400"><strong>Editorial Work</strong></font><br /><br /><ul><li><span></span>Senior Editor,&nbsp;<a href="http://onlinelibrary.wiley.com/journal/10.1111/%28ISSN%291469-185X" target="_blank">Biological Reviews</a><span style="color:rgb(42, 42, 42)">&nbsp;(2021-...</span><span style="color:rgb(42, 42, 42)">)</span></li><li><span>Associate&nbsp;Editor, <a href="https://onlinelibrary.wiley.com/journal/14610248" target="_blank">Ecology Letters</a> (2018-...)</span></li><li><span>Associate Editor, <a href="https://www.cell.com/iscience/home" target="_blank">iScience</a> (2018-...)</span></li><li><span>Associate&nbsp;Editor, <a href="http://www.biomedcentral.com/bmcbiol" target="_blank">BMC Biology</a> (2015-...)</span></li><li><span>Board of Reviewing Editors, <a href="http://eep.oxfordjournals.org/" target="_blank">Environmental Epigenetics</a> (2015-...</span><span>)</span></li><li><span>Associate Editor, </span><a href="http://www.methodsinecologyandevolution.org/view/0/index.html" target="_blank">Methods in Ecology and Evolution</a><span>&nbsp;(2013-2015)</span></li><li><span>Editorial Board, </span><a href="http://onlinelibrary.wiley.com/journal/10.1111/%28ISSN%291469-185X" target="_blank">Biological Reviews</a>&nbsp;(2012-2021)</li><li><span>Editor, </span><a href="http://beheco.oxfordjournals.org/" target="_blank">Behavioral Ecology</a>&nbsp;(2012-2016)</li><li><span>Board of Reviewing Editors, </span><a href="http://onlinelibrary.wiley.com/journal/10.1111/%28ISSN%291420-9101" target="_blank">Journal of Evolutionary Biology</a>&nbsp;(2011-2014)</li><li><span>Associate Editor, </span><a href="http://www.springer.com/life+sciences/evolutionary+%26+developmental+biology/journal/10682" target="_blank">Evolutionary Ecology</a>&nbsp;(2011-2014)</li><li><span>Associate Editor, </span><a href="http://www.publish.csiro.au/nid/96/aid/2409.htm" target="_blank">Emu: Austral Ornithology</a>&nbsp;(2011-2014)</li><li><span>Advisory Editorial Board, </span><a href="http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1439-0310" target="_blank">Ethology</a>&nbsp;(2010-...)</li></ul></div>
-      <hr style="width:100%;clear:both;visibility:hidden;"></hr>
+      <hr style="width:100%;clear:both;visibility:hidden;">
       
       <div><div style="height: 20px; overflow: hidden; width: 100%;"></div>
-      <hr class="styled-hr" style="width:100%;"></hr>
+      <hr class="styled-hr" style="width:100%;">
       <div style="height: 20px; overflow: hidden; width: 100%;"></div></div>
       </div>
       </div>
@@ -215,6 +285,16 @@
       });
     });
   </script>
+  <script src="js/1.js"></script>
+  <script src="js/2.js"></script>
+  <script src="js/3.js"></script>
+  <script src="js/4.js"></script>
+  <script src="js/5.js"></script>
+  <script src="js/6.js"></script>
+  <script src="js/7.js"></script>
+  <script src="js/8.js"></script>
+  <script src="js/9.js"></script>
+  
 
 
 
