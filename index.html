@@ -373,6 +373,36 @@
                 opacity: 1;
             }
         }
+        /* Fade-in on scroll */
+  .fade-in-section {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+  }
+
+  .fade-in-section.visible {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Glowing border animation */
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.4), 0 0 10px rgba(0, 123, 255, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 15px rgba(0, 123, 255, 0.7), 0 0 25px rgba(0, 123, 255, 0.6);
+    }
+    100% {
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.4), 0 0 10px rgba(0, 123, 255, 0.3);
+    }
+  }
+
+  .glow-animation {
+    animation: glow 2s infinite ease-in-out;
+    border: 2px solid rgba(0, 123, 255, 0.6);
+    border-radius: 8px;
+  }
     </style>
   </head>
   <body>
@@ -383,7 +413,7 @@
       id="menu-5-uJSrOkOEyE"
     >
       <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
-        <div class="container">
+        <div class="container ">
           <div class="navbar-brand">
             <span class="navbar-logo">
               <a href="#">
@@ -486,7 +516,7 @@
             </ul>
 
             <div class="navbar-buttons mbr-section-btn">
-              <a class="btn btn-primary display-4" href="#" autocomplete="off">
+              <a class="btn btn-primary display-4 glow-animation" href="#" autocomplete="off">
                 Log In
               </a>
             </div>
@@ -533,14 +563,14 @@
             />
           </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center fade-in-section">
           <div class="col-md-12 content-head">
             <h1 class="mbr-section-title mbr-fonts-style mb-4 display-2">
               <strong>Join COSSEE</strong>
             </h1>
             <div class="mbr-section-btn mt-4">
               <a
-                class="btn btn-primary display-7"
+                class="btn btn-primary display-7 glow-animation"
                 href="opportunities.html"
                 autocomplete="off"
               >
@@ -561,7 +591,7 @@
         <div class="row justify-content-center">
           <div class="card col-md-12 col-lg-10">
             <div class="card-wrapper">
-              <div class="image-wrapper d-flex justify-content-center mb-4">
+              <div class="image-wrapper d-flex justify-content-center mb-4 fade-in-section">
                 <img
                   src="web_files/photo-1732881112419-ca9ce3b85-h_ma49zwb8.jpg"
                   class="about-image-animation"
@@ -570,14 +600,14 @@
               </div>
               <div class="card-content-text">
                 <h3
-                  class="card-title mbr-fonts-style mbr-white mt-3 mb-4 display-2"
+                  class="card-title mbr-fonts-style mbr-white mt-3 mb-4 display-2 fade-in-section"
                 >
                   <strong>About COSSEE</strong>
                 </h3>
                 <div class="row card-box align-left">
                   <div class="item features-without-image col-12">
                     <div class="item-wrapper">
-                      <p class="mbr-text mbr-fonts-style display-7">
+                      <p class="mbr-text mbr-fonts-style display-7 fade-in-section">
                         In our research, we test a wide range of scientific
                         hypotheses using organisms from different taxa. We work
                         in collaboration with many other researchers from this
@@ -1150,5 +1180,21 @@
     <script src="js/7.js"></script>
     <script src="js/8.js"></script>
     <script src="js/9.js"></script>
+    <script>
+      // Add fade-in on scroll
+      const faders = document.querySelectorAll('.fade-in-section');
+      const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
+      
+      const appearOnScroll = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        });
+      }, appearOptions);
+      
+      faders.forEach(fader => appearOnScroll.observe(fader));
+    </script>
+    
   </body>
 </html>
