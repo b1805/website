@@ -358,6 +358,22 @@
         }
       }
     </style>
+        <style>
+        /* Fade-in animation for the main title */
+        .main-title-animation {
+            opacity: 0;
+            animation: fadeIn 1s ease-in-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
   </head>
   <body>
     <section
@@ -492,7 +508,7 @@
         <div class="row">
           <div class="content-wrap col-12 col-md-12">
             <h1
-              class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1"
+              class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1 main-title-animation"
             >
               <strong>
                 Centre for Open Science and Synthesis in Ecology and Evolution
@@ -548,6 +564,7 @@
               <div class="image-wrapper d-flex justify-content-center mb-4">
                 <img
                   src="web_files/photo-1732881112419-ca9ce3b85-h_ma49zwb8.jpg"
+                  class="about-image-animation"
                   alt=""
                 />
               </div>
