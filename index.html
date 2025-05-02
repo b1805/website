@@ -528,7 +528,7 @@
     <section
       data-bs-version="5.1"
       class="header18 cid-uJSrOkQqdL mbr-fullscreen"
-      data-bg-video="web_files/vid1.mp4"
+      data-bg-video="web_files/vid3.mp4"
     >
       <div
         class="mbr-overlay"
@@ -1181,6 +1181,11 @@
     <script src="js/8.js"></script>
     <script src="js/9.js"></script>
     <script>
+      //loop video
+      document.querySelectorAll('video').forEach(function(video) {
+    video.setAttribute('loop', '');
+});
+
       // Add fade-in on scroll
       const faders = document.querySelectorAll('.fade-in-section');
       const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
