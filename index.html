@@ -40,6 +40,27 @@
       .navbar.opened {
         z-index: 1032;
       }
+      .loop-container {
+        overflow: hidden;
+        white-space: nowrap;
+        width: 100%;
+        background: #f0f0f0; /* optional background */
+      }
+
+      .loop-text {
+        display: inline-block;
+        padding-left: 100%; /* start offscreen */
+        animation: scroll-left 20s linear infinite;
+        font-size: 3rem; /* or whatever size you want */
+      }
+      @keyframes scroll-left {
+        0% {
+          transform: translateX(0);
+        }
+        100% {
+          transform: translateX(-100%);
+        }
+      }
       @-webkit-keyframes animationBanner {
         0% {
           opacity: 0;
@@ -358,51 +379,54 @@
         }
       }
     </style>
-        <style>
-        /* Fade-in animation for the main title */
-        .main-title-animation {
-            opacity: 0;
-            animation: fadeIn 1s ease-in-out forwards;
+    <style>
+      /* Fade-in animation for the main title */
+      .main-title-animation {
+        opacity: 0;
+        animation: fadeIn 1s ease-in-out forwards;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
         }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-            }
-            to {
-                opacity: 1;
-            }
+        to {
+          opacity: 1;
         }
-        /* Fade-in on scroll */
-  .fade-in-section {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
-  }
+      }
+      /* Fade-in on scroll */
+      .fade-in-section {
+        opacity: 0;
+        transform: translateY(20px);
+        transition: opacity 1s ease-out, transform 1s ease-out;
+      }
 
-  .fade-in-section.visible {
-    opacity: 1;
-    transform: none;
-  }
+      .fade-in-section.visible {
+        opacity: 1;
+        transform: none;
+      }
 
-  /* Glowing border animation */
-  @keyframes glow {
-    0% {
-      box-shadow: 0 0 5px rgba(0, 123, 255, 0.4), 0 0 10px rgba(0, 123, 255, 0.3);
-    }
-    50% {
-      box-shadow: 0 0 15px rgba(0, 123, 255, 0.7), 0 0 25px rgba(0, 123, 255, 0.6);
-    }
-    100% {
-      box-shadow: 0 0 5px rgba(0, 123, 255, 0.4), 0 0 10px rgba(0, 123, 255, 0.3);
-    }
-  }
+      /* Glowing border animation */
+      @keyframes glow {
+        0% {
+          box-shadow: 0 0 5px rgba(0, 123, 255, 0.4),
+            0 0 10px rgba(0, 123, 255, 0.3);
+        }
+        50% {
+          box-shadow: 0 0 15px rgba(0, 123, 255, 0.7),
+            0 0 25px rgba(0, 123, 255, 0.6);
+        }
+        100% {
+          box-shadow: 0 0 5px rgba(0, 123, 255, 0.4),
+            0 0 10px rgba(0, 123, 255, 0.3);
+        }
+      }
 
-  .glow-animation {
-    animation: glow 2s infinite ease-in-out;
-    border: 2px solid rgba(0, 123, 255, 0.6);
-    border-radius: 8px;
-  }
+      .glow-animation {
+        animation: glow 2s infinite ease-in-out;
+        border: 2px solid rgba(0, 123, 255, 0.6);
+        border-radius: 8px;
+      }
     </style>
   </head>
   <body>
@@ -413,7 +437,7 @@
       id="menu-5-uJSrOkOEyE"
     >
       <nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
-        <div class="container ">
+        <div class="container">
           <div class="navbar-brand">
             <span class="navbar-logo">
               <a href="#">
@@ -516,7 +540,11 @@
             </ul>
 
             <div class="navbar-buttons mbr-section-btn">
-              <a class="btn btn-primary display-4 glow-animation" href="#" autocomplete="off">
+              <a
+                class="btn btn-primary display-4 glow-animation"
+                href="#"
+                autocomplete="off"
+              >
                 Log In
               </a>
             </div>
@@ -532,7 +560,7 @@
     >
       <div
         class="mbr-overlay"
-        style="opacity: 0.0; background-color: rgb(0, 0, 0)"
+        style="opacity: 0; background-color: rgb(0, 0, 0)"
       ></div>
       <div class="container-fluid">
         <div class="row">
@@ -553,6 +581,11 @@
       data-bs-version="5.1"
       class="header12 cid-uJSrOkRFm1"
       id="call-to-action-8-uJSrOkRFm1"
+      style="
+        background-image: url('web_files/2023-06-29_13.51.26.jpg');
+        background-size: cover;
+        background-position: center;
+      "
     >
       <div class="text-center container">
         <div class="row mb-4 justify-content-center">
@@ -565,9 +598,6 @@
         </div>
         <div class="row justify-content-center fade-in-section">
           <div class="col-md-12 content-head">
-            <h1 class="mbr-section-title mbr-fonts-style mb-4 display-2">
-              <strong>Join COSSEE</strong>
-            </h1>
             <div class="mbr-section-btn mt-4">
               <a
                 class="btn btn-primary display-7 glow-animation"
@@ -591,13 +621,9 @@
         <div class="row justify-content-center">
           <div class="card col-md-12 col-lg-10">
             <div class="card-wrapper">
-              <div class="image-wrapper d-flex justify-content-center mb-4 fade-in-section">
-                <img
-                  src="web_files/photo-1732881112419-ca9ce3b85-h_ma49zwb8.jpg"
-                  class="about-image-animation"
-                  alt=""
-                />
-              </div>
+              <div
+                class="image-wrapper d-flex justify-content-center mb-4 fade-in-section"
+              ></div>
               <div class="card-content-text">
                 <h3
                   class="card-title mbr-fonts-style mbr-white mt-3 mb-4 display-2 fade-in-section"
@@ -607,7 +633,9 @@
                 <div class="row card-box align-left">
                   <div class="item features-without-image col-12">
                     <div class="item-wrapper">
-                      <p class="mbr-text mbr-fonts-style display-7 fade-in-section">
+                      <p
+                        class="mbr-text mbr-fonts-style display-7 fade-in-section"
+                      >
                         In our research, we test a wide range of scientific
                         hypotheses using organisms from different taxa. We work
                         in collaboration with many other researchers from this
@@ -706,194 +734,10 @@
 
     <section
       data-bs-version="5.1"
-      class="features03 cid-uJSrOkSQ5o"
-      id="news-1-uJSrOkSQ5o"
-    >
-      <div class="container-fluid">
-        <div class="row justify-content-center mb-5">
-          <div class="col-12 content-head">
-            <div class="mbr-section-head">
-              <h4
-                class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"
-              >
-                <strong>Lab News</strong>
-              </h4>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="item features-image col-12 col-md-6 col-lg-3 active">
-            <div class="item-wrapper">
-              <div class="item-img mb-3">
-                <img
-                  src="web_files/photo-1734444846614-dc5f19832-h_ma4a42tl.jpg"
-                  alt=""
-                  title=""
-                />
-              </div>
-              <div class="item-content align-left">
-                <h5 class="item-title mbr-fonts-style mt-0 mb-2 display-5">
-                  <strong>Text</strong>
-                </h5>
-                <p class="mbr-text mbr-fonts-style mb-3 display-7">date</p>
-                <p class="mbr-text mbr-fonts-style mb-3 display-7">text</p>
-                <div class="mbr-section-btn item-footer">
-                  <a
-                    href=""
-                    class="btn item-btn btn-primary display-7"
-                    autocomplete="off"
-                  >
-                    Read
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item features-image col-12 col-md-6 col-lg-3">
-            <div class="item-wrapper">
-              <div class="item-img mb-3">
-                <img
-                  src="web_files/photo-1580377968562-5f0225d15-h_ma4a4hhb.jpg"
-                  alt=""
-                  title=""
-                  data-slide-to="1"
-                  data-bs-slide-to="1"
-                />
-              </div>
-              <div class="item-content align-left">
-                <h5 class="item-title mbr-fonts-style mb-2 mt-0 display-5">
-                  <strong>Text</strong>
-                </h5>
-                <p class="mbr-text mbr-fonts-style mb-3 display-7">date</p>
-                <p class="mbr-text mbr-fonts-style mb-3 display-7">text</p>
-                <div class="mbr-section-btn item-footer">
-                  <a
-                    href=""
-                    class="btn item-btn btn-primary display-7"
-                    autocomplete="off"
-                  >
-                    Read
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item features-image col-12 col-md-6 col-lg-3">
-            <div class="item-wrapper">
-              <div class="item-img mb-3">
-                <img
-                  src="web_files/photo-1614169270948-e1b4294cd-h_ma4a4m89.jpg"
-                  alt=""
-                  title=""
-                  data-slide-to="2"
-                  data-bs-slide-to="2"
-                />
-              </div>
-              <div class="item-content align-left">
-                <h5 class="item-title mbr-fonts-style mb-2 mt-0 display-5">
-                  <strong>Text</strong>
-                </h5>
-                <p class="mbr-text mbr-fonts-style mb-3 display-7">date</p>
-                <p class="mbr-text mbr-fonts-style mb-3 display-7">text</p>
-                <div class="mbr-section-btn item-footer">
-                  <a
-                    href=""
-                    class="btn item-btn btn-primary display-7"
-                    autocomplete="off"
-                  >
-                    Read
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="item features-image col-12 col-md-6 col-lg-3">
-            <div class="item-wrapper">
-              <div class="item-img mb-3">
-                <img
-                  src="web_files/photo-1709227371218-35ef4d1d9-h_ma4a4rpt.jpg"
-                  alt=""
-                  title=""
-                  data-slide-to="2"
-                  data-bs-slide-to="2"
-                />
-              </div>
-              <div class="item-content align-left">
-                <h5 class="item-title mbr-fonts-style mb-2 mt-0 display-5">
-                  <strong>Text</strong>
-                </h5>
-                <p class="mbr-text mbr-fonts-style mb-3 display-7">date</p>
-                <p class="mbr-text mbr-fonts-style mb-3 display-7">text</p>
-                <div class="mbr-section-btn item-footer">
-                  <a
-                    href=""
-                    class="btn item-btn btn-primary display-7"
-                    autocomplete="off"
-                  >
-                    Read
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section
-      data-bs-version="5.1"
-      class="header18 cid-uJSrOkSpjv mbr-fullscreen"
-      data-bg-video="web_files/vid2.mp4"
-    >
-      <div
-        class="mbr-overlay"
-        style="opacity: 0.3; background-color: rgb(0, 0, 0)"
-      ></div>
-      <div class="container-fluid">
-        <div class="row"></div>
-      </div>
-    </section>
-
-    <section
-      data-bs-version="5.1"
-      class="gallery10 cid-uJSrOkSQAt"
-      id="features-61-uJSrOkSQAt"
-    >
-      <div class="container-fluid">
-        <div class="loop-container">
-          <div
-            class="item display-1"
-            data-linewords="* Ecology and Evolution * Open Science * Research Synthesis * Data Analysis *"
-            data-direction="-1"
-            data-speed="0.05"
-          ></div>
-
-          <div
-            class="item display-1"
-            data-linewords="*  Ecology and Evolution * Open Science * Research Synthesis * Data Analysis *"
-            data-direction="-1"
-            data-speed="0.05"
-          ></div>
-        </div>
-      </div>
-    </section>
-
-    <section
-      data-bs-version="5.1"
-      class="image02 cid-uJSrOkSL1s mbr-fullscreen mbr-parallax-background"
-      id="image-13-uJSrOkSL1s"
-    >
-      <div class="container">
-        <div class="row"></div>
-      </div>
-    </section>
-
-    <section
-      data-bs-version="5.1"
       class="gallery07 cid-uJSrOkSXKD"
       id="gallery-16-uJSrOkSXKD"
     >
-      <div class="container-fluid gallery-wrapper">
+      <div class="container-fluid gallery-wrapper position-relative">
         <div class="row justify-content-center">
           <div class="col-12 content-head">
             <div class="mbr-section-head mb-5">
@@ -905,39 +749,161 @@
             </div>
           </div>
         </div>
-        <div class="grid-container">
+
+        <!-- Manual navigation buttons -->
+        <button
+          id="galleryPrev"
+          style="
+            position: absolute;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+            width: 60px;
+            height: 60px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 50px;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <span
+            style="
+              display: inline-block;
+              width: 20px;
+              height: 20px;
+              border-left: 4px solid white;
+              border-bottom: 4px solid white;
+              transform: rotate(45deg);
+            "
+          ></span>
+        </button>
+
+        <button
+          id="galleryNext"
+          style="
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            width: 60px;
+            height: 60px;
+            background-color: #007bff;
+            border: none;
+            border-radius: 50px;
+            z-index: 10;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <span
+            style="
+              display: inline-block;
+              width: 20px;
+              height: 20px;
+              border-right: 4px solid white;
+              border-top: 4px solid white;
+              transform: rotate(45deg);
+            "
+          ></span>
+        </button>
+
+        <div class="grid-container overflow-hidden">
           <div
             class="grid-container-3 moving-left"
-            style="transform: translate3d(-200px, 0px, 0px)"
+            id="galleryScroll"
+            style="display: flex; transition: transform 0.5s ease"
           >
             <div class="grid-item">
-              <img
-                src="web_files/photo-1627817471035-3333a9ece-h_ma4a8u0c.jpg"
-                alt=""
-              />
+              <img src="web_files/2017-12-10 12.20.35.jpg" alt="" />
             </div>
             <div class="grid-item">
-              <img
-                src="web_files/photo-1714844437236-de8ef1c72-h_ma4a901g.jpg"
-                alt=""
-              />
+              <img src="web_files/2022-02-05_12.11.12.jpg" alt="" />
             </div>
             <div class="grid-item">
-              <img
-                src="web_files/photo-1614308460927-5024ba2e1-h_ma4a9799.jpg"
-                alt=""
-              />
+              <img src="web_files/2022-02-13_10.43.56.jpg" alt="" />
             </div>
             <div class="grid-item">
-              <img
-                src="web_files/images/photo-1709227371446-8e76f7526-h_ma4a9gdd.jpg"
-                alt=""
-              />
+              <img src="web_files/2023-08-22_10.36.36.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="web_files/2020-07-21_12.41.56.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="web_files/2023-03-21_11.45.14.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="web_files/2014-06-29 13.32.35.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="web_files/2018-03-29 13.28.56.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="web_files/2023-04-11_19.44.41.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="web_files/2023-06-29_13.51.26.jpg" alt="" />
+            </div>
+
+            <div class="grid-item">
+              <img src="web_files/2019-09-17 20.46.20.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="web_files/2019-09-17 20.46.47.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="web_files/2019-06-17 15.08.03.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="web_files/2019-06-19 13.26.17.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="web_files/2019-06-21 09.38.19.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="web_files/2019-06-21 09.38.37.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="web_files/2019-06-21 09.47.26.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="web_files/2019-07-30 09.17.51.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="web_files/2019-08-21 05.45.15.jpg" alt="" />
+            </div>
+            <div class="grid-item">
+              <img src="web_files/2019-10-29 17.51.46.jpg" alt="" />
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <script>
+      const scrollContainer = document.querySelector(".grid-container-3")
+      const nextBtn = document.getElementById("galleryNext")
+      const prevBtn = document.getElementById("galleryPrev")
+
+      let currentTranslateX = -200 // starting value matching your inline style
+
+      function updateTransform() {
+        scrollContainer.style.transform = `translateX(${currentTranslateX}px)`
+      }
+
+      nextBtn.addEventListener("click", () => {
+        currentTranslateX -= 300 // move left
+        updateTransform()
+      })
+
+      prevBtn.addEventListener("click", () => {
+        currentTranslateX += 300 // move right
+        updateTransform()
+      })
+    </script>
 
     <section
       data-bs-version="5.1"
@@ -1008,6 +974,192 @@
 
     <section
       data-bs-version="5.1"
+      class="features03 cid-uJSrOkSQ5o"
+      id="news-1-uJSrOkSQ5o"
+    >
+      <div class="container-fluid">
+        <div class="row justify-content-center mb-5">
+          <div class="col-12 content-head">
+            <div class="mbr-section-head">
+              <h4
+                class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"
+              >
+                <strong>Lab News</strong>
+              </h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- Custom scroll container -->
+        <div
+          class="news-scroll-wrapper position-relative"
+          style="overflow: hidden"
+        >
+          <div
+            id="newsScroll"
+            class="d-flex"
+            style="transform: translateX(0px); transition: transform 0.5s ease"
+          >
+            <!-- News Item 1 -->
+            <div class="col-12 col-md-6 col-lg-3 flex-shrink-0">
+              <div class="item-wrapper text-center mx-2">
+                <div class="item-img mb-3">
+                  <img src="web_files/img-9988.jpg" alt="" class="img-fluid" />
+                </div>
+                <h5 class="item-title mbr-fonts-style mt-0 mb-2 display-5">
+                  <strong>A True Canadian Experience: Let’s Go Oilers!</strong>
+                </h5>
+                <p class="mbr-text mbr-fonts-style mb-3 display-7">
+                  April 16, 2025
+                </p>
+                <p class="mbr-text mbr-fonts-style mb-3 display-7">
+                  Shinichi Nakagawa
+                </p>
+                <a href="" class="btn item-btn btn-primary display-7">Read</a>
+              </div>
+            </div>
+
+            <!-- News Item 2 -->
+            <div class="col-12 col-md-6 col-lg-3 flex-shrink-0">
+              <div class="item-wrapper text-center mx-2">
+                <div class="item-img mb-3">
+                  <img src="web_files/IMG_5590.JPG" alt="" class="img-fluid" />
+                </div>
+                <h5 class="item-title mbr-fonts-style mt-0 mb-2 display-5">
+                  <strong>Cross-country skiing</strong>
+                </h5>
+                <p class="mbr-text mbr-fonts-style mb-3 display-7">
+                  April 2, 2025
+                </p>
+                <p class="mbr-text mbr-fonts-style mb-3 display-7">
+                  Ayumi Mizuno
+                </p>
+                <a href="" class="btn item-btn btn-primary display-7">Read</a>
+              </div>
+            </div>
+
+            <!-- News Item 3 -->
+            <div class="col-12 col-md-6 col-lg-3 flex-shrink-0">
+              <div class="item-wrapper text-center mx-2">
+                <div class="item-img mb-3">
+                  <img src="web_files/img-5663.jpg" alt="" class="img-fluid" />
+                </div>
+                <h5 class="item-title mbr-fonts-style mt-0 mb-2 display-5">
+                  <strong>Mardi Gras Parade 2025</strong>
+                </h5>
+                <p class="mbr-text mbr-fonts-style mb-3 display-7">
+                  March 1, 2025
+                </p>
+                <p class="mbr-text mbr-fonts-style mb-3 display-7">
+                  Malgorzata (Losia) Lagisz
+                </p>
+                <a href="" class="btn item-btn btn-primary display-7">Read</a>
+              </div>
+            </div>
+
+            <!-- News Item 4 -->
+            <div class="col-12 col-md-6 col-lg-3 flex-shrink-0">
+              <div class="item-wrapper text-center mx-2">
+                <div class="item-img mb-3">
+                  <img src="web_files/img-9234.jpg" alt="" class="img-fluid" />
+                </div>
+                <h5 class="item-title mbr-fonts-style mt-0 mb-2 display-5">
+                  <strong>
+                    Reflecting on a Year of Change: I-deel in 2024
+                  </strong>
+                </h5>
+                <p class="mbr-text mbr-fonts-style mb-3 display-7">
+                  December 30,2024
+                </p>
+                <p class="mbr-text mbr-fonts-style mb-3 display-7">
+                  Shinichi Nakagawa
+                </p>
+                <a href="" class="btn item-btn btn-primary display-7">Read</a>
+              </div>
+            </div>
+
+            <!-- Add more news items if needed -->
+          </div>
+
+          <!-- Arrow buttons -->
+          <button
+            id="newsPrev"
+            style="
+              position: absolute;
+              left: 10px;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 60px;
+              height: 60px;
+              background-color: #007bff;
+              border-radius: 50%;
+              border: none;
+              color: white;
+              font-size: 24px;
+              z-index: 10;
+            "
+          >
+            ‹
+          </button>
+          <button
+            id="newsNext"
+            style="
+              position: absolute;
+              right: 10px;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 60px;
+              height: 60px;
+              background-color: #007bff;
+              border-radius: 50%;
+              border: none;
+              color: white;
+              font-size: 24px;
+              z-index: 10;
+            "
+          >
+            ›
+          </button>
+        </div>
+      </div>
+    </section>
+    <script>
+      const newsContainer = document.getElementById("newsScroll")
+      const newsNextBtn = document.getElementById("newsNext")
+      const newsPrevBtn = document.getElementById("newsPrev")
+
+      let newsTranslateX = 0 // starting at 0
+
+      function updateNewsTransform() {
+        newsContainer.style.transform = `translateX(${newsTranslateX}px)`
+      }
+
+      newsNextBtn.addEventListener("click", () => {
+        newsTranslateX -= 300 // move left
+        updateNewsTransform()
+      })
+
+      newsPrevBtn.addEventListener("click", () => {
+        newsTranslateX += 300 // move right
+        updateNewsTransform()
+      })
+    </script>
+
+    <div class="container-fluid">
+      <div class="loop-container">
+        <div class="loop-text">
+          * Ecology and Evolution * Open Science * Research Synthesis * Data
+          Analysis * Ecology and Evolution * Open Science * Research Synthesis *
+          Data Analysis * Ecology and Evolution * Open Science * Research
+          Synthesis * Data Analysis * Ecology and Evolution * Open Science *
+          Research Synthesis * Data Analysis * Ecology and Evolution * Open
+          Science * Research Synthesis * Data Analysis
+        </div>
+      </div>
+    </div>
+
+    <!-- <section
+      data-bs-version="5.1"
       class="social4 cid-uJSrOkTUUx"
       id="follow-us-1-uJSrOkTUUx"
     >
@@ -1053,7 +1205,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
     <section
       data-bs-version="5.1"
@@ -1164,7 +1316,7 @@
 
           <div class="col-12 mt-4">
             <p class="mbr-fonts-style copyright display-7">
-              © 2025 COSSEE Lab. All rights reserved.
+              © 2025 COSSEE Lab. Created by <a href="https://www.linkedin.com/in/bhavya-jain-b42618237/" target="_blank" rel="noopener">Bhavya Jain</a>.
             </p>
           </div>
         </div>
@@ -1182,24 +1334,23 @@
     <script src="js/9.js"></script>
     <script>
       //loop video
-      document.querySelectorAll('video').forEach(function(video) {
-    video.setAttribute('loop', '');
-});
+      document.querySelectorAll("video").forEach(function (video) {
+        video.setAttribute("loop", "")
+      })
 
       // Add fade-in on scroll
-      const faders = document.querySelectorAll('.fade-in-section');
-      const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" };
-      
+      const faders = document.querySelectorAll(".fade-in-section")
+      const appearOptions = { threshold: 0.1, rootMargin: "0px 0px -50px 0px" }
+
       const appearOnScroll = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (!entry.isIntersecting) return;
-          entry.target.classList.add('visible');
-          observer.unobserve(entry.target);
-        });
-      }, appearOptions);
-      
-      faders.forEach(fader => appearOnScroll.observe(fader));
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return
+          entry.target.classList.add("visible")
+          observer.unobserve(entry.target)
+        })
+      }, appearOptions)
+
+      faders.forEach((fader) => appearOnScroll.observe(fader))
     </script>
-    
   </body>
 </html>
