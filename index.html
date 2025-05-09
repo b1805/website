@@ -36,7 +36,6 @@
       .navbar-fixed-top {
         top: auto;
       }
-
       .navbar.opened {
         z-index: 1032;
       }
@@ -49,13 +48,20 @@
         display: inline-block;
         padding-left: 5%; /* start offscreen */
         animation: scroll-left 36s linear infinite;
-        font-size: 3rem; /* or whatever size you want */
+        font-size: 3rem;
       }
       .grid-item img {
         height: 450px;
         width: auto;
-        object-fit: cover;
+        object-fit: contain;
         display: block;
+      }
+      .grid-container-3 {
+        display: flex;
+        align-items: flex-start; /* or center if needed */
+      }
+      .grid-item {
+        flex: 0 0 auto; /* prevent flex shrinking */
       }
       @keyframes scroll-left {
         0% {
