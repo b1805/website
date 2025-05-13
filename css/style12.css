@@ -1,12 +1,4 @@
-ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, div.paragraph, blockquote, fieldset, input {
-    margin: 0;
-    padding: 0;
-}
 
-ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, body, html, p, blockquote, fieldset, input {
-    margin: 0;
-    padding: 0;
-}
 
 a img {
     border: 0;
@@ -18,14 +10,6 @@ a {
 
 html {
     height: 100%;
-}
-
-body {
-    font-family: 'Open sans', sans-serif;
-    font-size: 15px;
-    color: #8e8e8e;
-    min-height: 100%;
-    background-color: #f9f9f9;
 }
 
 .splash-page {
@@ -44,14 +28,6 @@ body {
 
 .bg-wrapper {
     background-color: #ffffff;
-}
-
-h2 {
-    font-family: 'Alice', sans-serif;
-    font-size: 26px;
-    font-weight: normal;
-    color: #484848;
-    padding: .3em 0;
 }
 
 div.paragraph, div.paragraph {
