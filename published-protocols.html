@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>People – COSSEE Lab</title>
+  <link rel="stylesheet" href="css/style1.css" />
+  <link rel="stylesheet" href="css/style2.css" />
+  <link rel="stylesheet" href="css/style3.css" />
+  <link rel="stylesheet" href="css/style4.css" />
+  <link rel="stylesheet" href="css/style5.css" />
+  <link rel="stylesheet" href="css/style6.css" />
+  <link rel="stylesheet" href="css/style7.css" />
+  <link rel="stylesheet" href="css/style8.css" />
+  <link rel="preload" href="css/style9.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/style10.css"></noscript>
+  <link rel="stylesheet" href="css/style11.css" />
+  <link rel="stylesheet" href="css/style12.css" type="text/css">
+
+  <style>
+    .navbar-fixed-top {
+      top: auto;
+    }
+    
+    .navbar.opened {
+        z-index: 1032;
+    }
+    @-webkit-keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
+    @-moz-keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
+    @-o-keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
+       @keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
+    @-webkit-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
+    @-moz-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
+    @-o-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
+       @keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
+    
+    @-webkit-keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+    @-moz-keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+    @-o-keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+    @keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+    
+    @media(max-width: 575px) {
+    
+      @-webkit-keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
+      @-moz-keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
+      @-o-keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
+        @keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
+      @-webkit-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
+      @-moz-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
+      @-o-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
+        @keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
+    
+      @-webkit-keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+      @-moz-keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+      @-o-keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+      @keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+    }
+    .tab-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 7rem 1rem 4rem;
+    }
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      border-bottom: 2px solid #ccc;
+      justify-content: center;
+    }
+    .tab-button {
+      padding: 1rem;
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-size: 1rem;
+    }
+    .tab-button.active {
+      border-bottom: 3px solid #333;
+      font-weight: bold;
+    }
+    .tab-content {
+      display: none;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .person-card img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .person-card h4 {
+      margin-top: 1rem;
+      margin-bottom: 0.25rem;
+    }
+    .person-card p {
+      font-style: italic;
+      margin: 0;
+    }
+    .page-section {
+      padding: 7rem 1rem 4rem;
+    }
+    .content-col {
+      padding: 1rem;
+    }
+    .content-col h3 {
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .content-col ul {
+      padding-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .content-col img {
+      max-width: 100%;
+      margin: 1rem 0;
+    }
+    .content-col img {
+        display: inline-block;
+        margin: 1rem auto;
+        height: auto; /* let height be flexible unless specified */
+        width: auto;  /* let width be flexible unless specified */
+        max-width: 100%; /* still responsive */
+    }
+  </style>
+</head>
+<body>
+    <!-- NAV BAR -->
+  <section data-bs-version="5.1" class="menu menu2 cid-uJSrOkOEyE" once="menu" id="menu-5-uJSrOkOEyE">
+	
+
+	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+		<div class="container">
+			<div class="navbar-brand">
+				<span class="navbar-logo">
+					<a href="#">
+						<img src="web_files/photo-1732881112067-aa3e9ece2-h_ma49wziz.jpg" alt="" style="height: 4.3rem;">
+					</a>
+				</span>
+				<span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="index.html" autocomplete="off">Home</a></span>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
+						<a class="nav-link link text-black display-4" href="people.html">People</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link text-black display-4" href="research.html" aria-expanded="false">Research</a>
+					</li><li class="nav-item"><a class="nav-link link text-black display-4" href="publications.html" aria-expanded="false" autocomplete="off">Publications</a></li>
+					<li class="nav-item">
+						<a class="nav-link link text-black display-4" href="blog.html">Blog</a>
+					</li><li class="nav-item"><a class="nav-link link text-black display-4" href="open-sciences.html" autocomplete="off">Open Science</a></li><li class="nav-item">
+            <a class="nav-link link text-black display-4" href="opportunities.html" autocomplete="off">Opportunities</a></li><li class="nav-item">
+              <a class="nav-link link text-black display-4" href="links.html" autocomplete="off">Links</a></li></ul>
+				
+				<div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="contact.html" autocomplete="off">Contact Us</a></div>
+			</div>
+		</div>
+	</nav>
+</section>
+
+  <!-- PAGE CONTENT -->
+  <section class="page-section">
+    <h2 class="display-2 text-center mb-4"><strong>Published Protocols</strong></h2>
+    Published Protocols are peer-reviewed stand-alone publications outlining hypotheses and methods of a planned research. Such protocol will be followed by a separate publication presenting results of the project.
+    <div class="paragraph"><ol><li><strong style="color:rgb(42, 42, 42)">Burke, S., Pottier, P., Macartney, E. L., Drobniak, S. M., Lagisz, M.,</strong><span style="color:rgb(42, 42, 42)">&nbsp;Ainsworth, T.</span><strong style="color:rgb(42, 42, 42)">&nbsp;&amp; Nakagawa, S.</strong><span style="color:rgb(42, 42, 42)">&nbsp;(2022) Mapping literature reviews on coral health: Protocol for a review map, critical appraisal, and bibliometric analysis.&nbsp;</span><em style="color:rgb(42, 42, 42)">Ecological Solutions and Evidence</em><span style="color:rgb(42, 42, 42)">&nbsp;</span><span style="color:rgb(42, 42, 42)">[<a href="https://besjournals.onlinelibrary.wiley.com/doi/10.1002/2688-8319.12190" target="_blank">Link</a>]</span><br /></li><li><strong style="color:rgb(42, 42, 42)">Vendl&nbsp;C,&nbsp;</strong><span style="color:rgb(42, 42, 42)">Taylor&nbsp;MD, Breunig&nbsp;J, Gibson&nbsp;MJ, Hesselson&nbsp;D, Neely GG,</span><strong style="color:rgb(42, 42, 42)">&nbsp;Lagisz, M,&nbsp;Nakagawa&nbsp;S</strong><span style="color:rgb(42, 42, 42)">&nbsp;(2022) PFAS exposure of humans, animals and the environment: protocol of an evidence review map and bibliometric analysis.&nbsp;</span><em style="color:rgb(42, 42, 42)">Environment International&nbsp;</em><span style="color:rgb(42, 42, 42)">158: 106973&#8203;</span><em style="color:rgb(42, 42, 42)"><strong>&nbsp;</strong></em><span style="color:rgb(42, 42, 42)">[<a href="https://www.sciencedirect.com/science/article/pii/S0160412021005985" target="_blank">Link</a>]</span></li><li><strong style="color:rgb(42, 42, 42)">Macartney&nbsp;EL, Drobniak&nbsp;SM, Nakagawa&nbsp;S,&nbsp;Lagisz&nbsp;M#</strong><span style="color:rgb(42, 42, 42)">&nbsp;(</span><span style="color:rgb(42, 42, 42)">2021</span><span style="color:rgb(42, 42, 42)">) Non-genetic inheritance of environmental exposures: a protocol for a map of systematic reviews with bibliometric analysis.&nbsp;</span><em style="color:rgb(42, 42, 42)">Environmental Evidence.<strong>&nbsp;</strong></em><span style="color:rgb(42, 42, 42)">10: 31 [</span><a href="https://environmentalevidencejournal.biomedcentral.com/articles/10.1186/s13750-021-00245-9" target="_blank">Link</a><span style="color:rgb(42, 42, 42)">]</span></li><li><strong style="color:rgb(42, 42, 42)">Vendl&nbsp;C,</strong><span style="color:rgb(42, 42, 42)">&nbsp;Taylor&nbsp;MD, Breunig&nbsp;J,&nbsp;<strong>Gibson&nbsp;MJ,</strong>&nbsp;Hesselson&nbsp;D, Neely GG,&nbsp;<strong>L</strong></span><strong style="color:rgb(42, 42, 42)">agisz&nbsp;M#,&nbsp;Nakagawa&nbsp;S#</strong><span style="color:rgb(42, 42, 42)">&nbsp;(</span><span style="color:rgb(42, 42, 42)">2021</span><span style="color:rgb(42, 42, 42)">) Profiling research on PFAS in wildlife: protocol of a systematic evidence map and bibliometric analysis.&nbsp;</span><em style="color:rgb(42, 42, 42)">Ecological Solutions and Evidence</em><span style="color:rgb(42, 42, 42)">&nbsp;2</span><span style="color:rgb(42, 42, 42)">: e12106</span><em style="color:rgb(42, 42, 42)"><strong>&nbsp;</strong></em><span style="color:rgb(42, 42, 42)">[</span><a href="https://besjournals.onlinelibrary.wiley.com/doi/full/10.1002/2688-8319.12106" target="_blank">Link</a><span style="color:rgb(42, 42, 42)">]</span></li><li><span style="color:rgb(42, 42, 42)">Martin&nbsp;JM, Bertram&nbsp;MG, Blanchfield&nbsp;PJ, Brand&nbsp;JA, Brodin&nbsp;T, Brooks&nbsp;BW, Cerveny&nbsp;D,&nbsp;</span><strong style="color:rgb(42, 42, 42)">Lagisz&nbsp;M,&nbsp;</strong><span style="color:rgb(42, 42, 42)">Ligocki&nbsp;IY, Michelangeli M,&nbsp;</span><strong style="color:rgb(42, 42, 42)">Nakagawa&nbsp;S,&nbsp;</strong><span style="color:rgb(42, 42, 42)">Orford&nbsp;JT, Sundin&nbsp;J, Tan H, Wong&nbsp;BBM,&nbsp;McCallum&nbsp;E&nbsp;(2021) Evidence of the impacts of pharmaceuticals on aquatic animal behaviour: a systematic map protocol.&nbsp;</span><em style="color:rgb(42, 42, 42)">Environmental Evidence&nbsp;</em><span style="color:rgb(42, 42, 42)">10: 26 [</span><a href="https://environmentalevidencejournal.biomedcentral.com/articles/10.1186/s13750-021-00241-z#citeas" target="_blank">Link</a><span style="color:rgb(42, 42, 42)">]</span></li><li><span style="color:rgb(42, 42, 42)">Young&nbsp;S, Haddaway&nbsp;NR,&nbsp;</span><strong style="color:rgb(42, 42, 42)">Nakagawa&nbsp;S, Lagisz M</strong><span style="color:rgb(42, 42, 42)">, Callaghan&nbsp;M&nbsp;(2021) Understanding collaboration and term usage dynamics in agricultural buffer strip research: a research weaving protocol.&nbsp;</span><em style="color:rgb(42, 42, 42)">Ecological Solutions and Evidence</em><span style="color:rgb(42, 42, 42)">&nbsp;</span><span style="color:rgb(42, 42, 42)">2: e12084&nbsp;[<a href="https://besjournals.onlinelibrary.wiley.com/doi/full/10.1002/2688-8319.12084" target="_blank">Link</a>]</span></li><li><span style="color:rgb(42, 42, 42)">Page&nbsp;MJ, Moher&nbsp;D, Fidler&nbsp;FM, Higgins&nbsp;JPT, Brennan,SE, Haddaway&nbsp;NR, Hamilton&nbsp;DG, Kanukula&nbsp;R, Karunananthan&nbsp;S, Maxwell&nbsp;LJ, McDonald&nbsp;S,&nbsp;</span><strong style="color:rgb(42, 42, 42)">Nakagawa&nbsp;S,</strong><span style="color:rgb(42, 42, 42)">&nbsp;Nunan&nbsp;D, Tugwell&nbsp;P,&nbsp;&nbsp;Welch&nbsp;VA,&nbsp;McKenzie&nbsp;JE&nbsp;(2021) The REPRISE project: protocol for an evaluation of REProducibility and Replicability In Syntheses of Evidence.&nbsp;</span><em style="color:rgb(42, 42, 42)">Systematic Reviews</em><span style="color:rgb(42, 42, 42)">&nbsp;10: 112 [</span><a href="https://systematicreviewsjournal.biomedcentral.com/articles/10.1186/s13643-021-01670-0" target="_blank">Link</a><span style="color:rgb(42, 42, 42)">] [</span><a href="https://www.researchsquare.com/article/rs-150893/v1" target="_blank">Preprint</a><span style="color:rgb(42, 42, 42)">]</span></li><li><span style="color:rgb(42, 42, 42)">Miyahara M, Hillier SL, Pridham L,&nbsp;<strong>Nakagawa S&nbsp;</strong>(2014) Task-oriented interventions approaches for children with&nbsp;</span><span style="color:rgb(42, 42, 42)">developmental co-ordination disorder</span><span style="color:rgb(42, 42, 42)">. (Protocol).&nbsp;<em>Cochrane Database of Systematic Reviews</em>: CD010914 [<a href="http://onlinelibrary.wiley.com/doi/10.1002/14651858.CD010914/full" target="_blank">Link</a>]</span></li></ol><br /><span style="color:rgb(42, 42, 42)">NOTE:&nbsp;</span><strong style="color:rgb(42, 42, 42)">Bold</strong><span style="color:rgb(42, 42, 42)">&nbsp;font indicates our research group members. # indicates equal contribution.</span></div>
+ </section>
+
+  <!-- FOOTER -->
+  <section data-bs-version="5.1" class="footer3 cid-uJSrOkUoKf">
+    <div class="container">
+      <div class="row">
+        <div class="row-links">
+          <ul class="header-menu">
+            <li class="header-menu-item mbr-fonts-style display-5">
+                <a href="index.html" class="text-white">Home</a>
+              </li><li class="header-menu-item mbr-fonts-style display-5">
+                <a href="people.html" class="text-white">People</a>
+              </li><li class="header-menu-item mbr-fonts-style display-5">
+                <a href="research.html" class="text-white">Research</a>
+              </li><li class="header-menu-item mbr-fonts-style display-5">
+                <a href="publications.html" class="text-white">Publications</a>
+              </li><li class="header-menu-item mbr-fonts-style display-5">
+                <a href="blog.html" class="text-white">Blog</a>
+              </li><li class="header-menu-item mbr-fonts-style display-5">
+                <a href="open-sciences.html" class="text-white">Open Science</a>
+              </li><li class="header-menu-item mbr-fonts-style display-5">
+                <a href="opportunities.html" class="text-white">Opportunities</a>
+              </li><li class="header-menu-item mbr-fonts-style display-5">
+                <a href="links.html" class="text-white">Links</a>
+              </li></ul>
+          </ul>
+        </div>
+        <div class="col-12 mt-4">
+          <p class="mbr-fonts-style copyright display-7">
+            © 2025 COSSEE Lab. Created by <a href="https://www.linkedin.com/in/bhavya-jain-b42618237/" target="_blank" rel="noopener">Bhavya Jain</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/1.js"></script>
+  <script src="js/2.js"></script>
+  <script src="js/3.js"></script>
+  <script src="js/4.js"></script>
+  <script src="js/5.js"></script>
+  <script src="js/6.js"></script>
+  <script src="js/7.js"></script>
+  <script src="js/8.js"></script>
+  <script src="js/9.js"></script>
+
+</body>
+</html>
