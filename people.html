@@ -135,6 +135,88 @@
   gap: 0.5rem;
 }
 
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .filter-group {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .filter-button {
+      padding: 0.4rem 1rem;
+      background: #eee;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .filter-button.active {
+      background-color: #0077cc;
+      color: white;
+    }
+
+    .member-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .member-button {
+      padding: 0.4rem 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #f9f9f9;
+    }
+
+    .member-button:hover {
+      background-color: #e0e0e0;
+    }
+
+    .profile-card {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 10px;
+      background-color: #fdfdfd;
+    }
+
+    .hidden {
+      display: none;
+    }
+    .tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+.filters {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* center horizontally */
+  gap: 1rem; /* spacing between filter groups */
+}
+
+.filter-group, .member-buttons {
+  text-align: center; /* center text and inline elements inside */
+}
+
+/* Optional: to make buttons nicely spaced and centered */
+.filter-group, .member-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* center the buttons horizontally */
+  gap: 0.5rem; /* spacing between buttons */
+}
   </style>
 </head>
 <body>
@@ -273,75 +355,6 @@
       </nav>
     </section>
   <!-- PEOPLE SECTION -->
-  <style>
-    
-
-    .filters {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      justify-content: center;
-      margin-bottom: 2rem;
-    }
-
-    .filter-group {
-      display: flex;
-      gap: 0.5rem;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-
-    .filter-button {
-      padding: 0.4rem 1rem;
-      background: #eee;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-    }
-
-    .filter-button.active {
-      background-color: #0077cc;
-      color: white;
-    }
-
-    .member-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      justify-content: center;
-      margin-bottom: 2rem;
-    }
-
-    .member-button {
-      padding: 0.4rem 1rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      cursor: pointer;
-      background-color: #f9f9f9;
-    }
-
-    .member-button:hover {
-      background-color: #e0e0e0;
-    }
-
-    .profile-card {
-      border: 1px solid #ccc;
-      padding: 1rem;
-      border-radius: 10px;
-      background-color: #fdfdfd;
-    }
-
-    .hidden {
-      display: none;
-    }
-    .tab-content {
-  display: none;
-}
-.tab-content.active {
-  display: block;
-}
-
-  </style>
   <div class="tab-container ">
   <h2 class="display-2" style="text-align: center;"><strong>Meet the COSSEE Team</strong></h2>
   </div>
@@ -379,7 +392,7 @@
       </div>
   </div>
 
-
+<!-- About -->
 <div class="about">
 
     <div class="tab-content active" id="shinichi">
@@ -779,7 +792,6 @@ document.querySelectorAll('.member-button').forEach(btn => {
 
   
 </script>
-
 </div>
 </div>
 
@@ -831,8 +843,5 @@ document.querySelectorAll('.member-button').forEach(btn => {
   <script src="js/8.js"></script>
   <script src="js/9.js"></script>
   
-
-
-
  </body>
 </html>
