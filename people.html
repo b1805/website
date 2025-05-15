@@ -58,7 +58,7 @@
     .tab-container {
       max-width: 1200px;
       margin: auto;
-      padding: 7rem 1rem 4rem;
+      padding: 7rem 1rem 0rem;
     }
     .tabs {
       display: flex;
@@ -262,18 +262,117 @@
       </nav>
     </section>
   <!-- PEOPLE SECTION -->
-  <section class="tab-container">
-    <h2 class="display-2" style="text-align: center;"><strong>Meet the COSSEE Team</strong></h2>
-    <div class="tabs">
-      <button class="tab-button active" data-tab="shinichi">Shinichi Nakagawa [he/him]</button>
-      <button class="tab-button" data-tab="bhavya">Bhavya Jain [he/him]</button>
-      <button class="tab-button" data-tab="losia">Malgorzata (Losia) Lagisz [she/her]</button>
-      <button class="tab-button" data-tab="ayumi">Ayumi Mizuno [she/her]</button>
-      <button class="tab-button" data-tab="erick">Erick Lundgren [he/him]</button>
-      <button class="tab-button" data-tab="anna">Anna Lenz [she/her]</button>
-      <button class="tab-button" data-tab="elena">Elena Gazzea [she/her]</button>
-      <button class="tab-button" data-tab="santi">Santiago Ortega [he/him]</button>
-    </div>
+  <style>
+    
+
+    .filters {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .filter-group {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .filter-button {
+      padding: 0.4rem 1rem;
+      background: #eee;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .filter-button.active {
+      background-color: #0077cc;
+      color: white;
+    }
+
+    .member-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+
+    .member-button {
+      padding: 0.4rem 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      cursor: pointer;
+      background-color: #f9f9f9;
+    }
+
+    .member-button:hover {
+      background-color: #e0e0e0;
+    }
+
+    .profile-card {
+      border: 1px solid #ccc;
+      padding: 1rem;
+      border-radius: 10px;
+      background-color: #fdfdfd;
+    }
+
+    .hidden {
+      display: none;
+    }
+    .tab-content {
+  display: none;
+}
+.tab-content.active {
+  display: block;
+}
+
+
+
+
+  </style>
+  <div class="tab-container ">
+  <h2 class="display-2" style="text-align: center;"><strong>Meet the COSSEE Team</strong></h2>
+  </div>
+  <div class="layout">
+
+    <!-- Filters -->
+    <div class="filters">
+      <div class="filter-group" id="status-filters">
+        <strong>Status:</strong>
+        <button class="filter-button active" data-status="all">All</button>
+        <button class="filter-button" data-status="current">Current</button>
+        <button class="filter-button" data-status="past">Past</button>
+      </div>
+      <div class="filter-group" id="role-filters">
+        <strong>Role:</strong>
+        <button class="filter-button active" data-role="all">All</button>
+        <button class="filter-button" data-role="Director">Director</button>
+        <button class="filter-button" data-role="Postdocs">Postdocs</button>
+        <button class="filter-button" data-role="PhD Students">PhD Students</button>
+        <button class="filter-button" data-role="MSc Students">Msc Students</button>
+        <button class="filter-button" data-role="Undergrad Students">Undergrad Students</button>
+        <button class="filter-button" data-role="Research Assistants">Research Assistants</button>
+        <button class="filter-button" data-role="Lab Managers">Lab Managers</button>
+        <button class="filter-button" data-role="Visitors">Visitors</button>
+      </div>
+      <div class="member-buttons">
+        <button class="member-button" data-id="shinichi">Shinichi Nakagawa</button>
+        <button class="member-button" data-id="bhavya">Bhavya Jain</button>
+        <button class="member-button" data-id="losia">Malgorzata Lagisz</button>
+        <button class="member-button" data-id="ayumi">Ayumi Mizuno</button>
+        <button class="member-button" data-id="anna">Anna Lenz</button>
+        <button class="member-button" data-id="elena">Elena Gazzea</button>
+        <button class="member-button" data-id="erick">Erick Lundgren</button>
+        <button class="member-button" data-id="santi">Santiago Ortega</button>
+      </div>
+  </div>
+
+
+<div class="about">
 
     <div class="tab-content active" id="shinichi">
       <h2 class="wsite-content-title" style="text-align:left;"><span style="font-weight:400"><span style="font-weight:400"><span style="font-weight:400"><span style="font-weight:400"><span style="font-weight:400"><span style="font-weight:400"><span style="font-weight:400"><span style="font-weight:400"><span>&nbsp;&#65279;</span><font color="#3f3f3f">Shinichi Nakagawa&nbsp; &nbsp;[he/him]</font><span>&#65279;</span></span></span></span></span></span></span></span></span></h2>
@@ -544,7 +643,110 @@
           </div>
       </div>
     </div>
-  </section>
+    <script>
+  const members = [
+    { id: 'shinichi', name: 'Shinichi Nakagawa [he/him]', status: 'current', role: 'Director' },
+    { id: 'bhavya', name: 'Bhavya Jain [he/him]', status: 'current', role: 'Research Assistants' },
+    { id: 'losia', name: 'Malgorzata (Losia) Lagisz [she/her]', status: 'current', role: 'Visitors' },
+    { id: 'ayumi', name: 'Ayumi Mizuno [she/her]', status: 'current', role: 'Postdocs' },
+    { id: 'anna', name: 'Anna Lenz [she/her]', status: 'current', role: 'PhD Students' },
+    { id: 'elena', name: 'Elena Gazzea [she/her]', status: 'current', role: 'Postdocs' },
+    { id: 'erick', name: 'Erick Lundgren [he/him]', status: 'current', role: 'Postdocs' },
+    { id: 'santi', name: 'Santiago Ortega [he/him]', status: 'current', role: 'Postdocs' }
+  ];
+  
+  
+
+  let activeStatus = 'all';
+  let activeRole = 'all';
+
+  // Show/hide tabs based on filters
+  function filterTabs() {
+    members.forEach(member => {
+      const tab = document.getElementById(member.id);
+      if (!tab) return;
+
+      const statusMatch = activeStatus === 'all' || member.status === activeStatus;
+      const roleMatch = activeRole === 'all' || member.role === activeRole;
+
+      if (statusMatch && roleMatch) {
+        tab.style.display = 'block';
+      } else {
+        tab.style.display = 'none';
+      }
+    });
+
+    // Show first visible tab as active, hide others
+    const visibleTabs = Array.from(document.querySelectorAll('.tab-content')).filter(tab => tab.style.display === 'block');
+    visibleTabs.forEach((tab, i) => {
+      if (i === 0) {
+        tab.classList.add('active');
+      } else {
+        tab.classList.remove('active');
+      }
+    });
+  }
+
+  // Setup filter buttons to change active filters and re-filter
+  function setupFilterButtons(groupId, filterType) {
+    const group = document.getElementById(groupId);
+    group.querySelectorAll('.filter-button').forEach(btn => {
+      btn.onclick = () => {
+        group.querySelectorAll('.filter-button').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        if (filterType === 'status') activeStatus = btn.dataset.status;
+        if (filterType === 'role') activeRole = btn.dataset.role;
+
+        filterTabs();
+      };
+    });
+  }
+
+  // Tab click handler: switch active tab on click
+  document.querySelectorAll('.tab-content').forEach(tab => {
+    tab.onclick = () => {
+      // Remove active from all tabs
+      document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+    }
+  });
+
+  let activeTabId = 'shinichi'; // default
+
+function filterTabs() {
+  members.forEach(member => {
+    const tab = document.getElementById(member.id);
+    const button = document.querySelector(`.member-button[data-id="${member.id}"]`);
+    if (!tab || !button) return;
+
+    const statusMatch = activeStatus === 'all' || member.status === activeStatus;
+    const roleMatch = activeRole === 'all' || member.role === activeRole;
+
+    const visible = statusMatch && roleMatch;
+    tab.style.display = visible && member.id === activeTabId ? 'block' : 'none';
+    button.style.display = visible ? 'inline-block' : 'none';
+  });
+}
+
+document.querySelectorAll('.member-button').forEach(btn => {
+  btn.onclick = () => {
+    activeTabId = btn.dataset.id;
+    filterTabs();
+  };
+});
+
+
+  // Initialize filters and tabs
+  setupFilterButtons('status-filters', 'status');
+  setupFilterButtons('role-filters', 'role');
+  filterTabs(); // apply filters initially
+
+  
+</script>
+
+</div>
+</div>
 
   <!-- FOOTER -->
   <section data-bs-version="5.1" class="footer3 cid-uJSrOkUoKf" once="footers" id="footer-6-uJSrOkUoKf">
