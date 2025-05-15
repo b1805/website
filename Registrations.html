@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+  <title>People – COSSEE Lab</title>
+  <link rel="stylesheet" href="css/style1.css" />
+  <link rel="stylesheet" href="css/style2.css" />
+  <link rel="stylesheet" href="css/style3.css" />
+  <link rel="stylesheet" href="css/style4.css" />
+  <link rel="stylesheet" href="css/style5.css" />
+  <link rel="stylesheet" href="css/style6.css" />
+  <link rel="stylesheet" href="css/style7.css" />
+  <link rel="stylesheet" href="css/style8.css" />
+  <link rel="preload" href="css/style9.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="css/style10.css"></noscript>
+  <link rel="stylesheet" href="css/style11.css" />
+  <link rel="stylesheet" href="css/style12.css" type="text/css">
+
+  <style>
+    .navbar-fixed-top {
+      top: auto;
+    }
+    
+    .navbar.opened {
+        z-index: 1032;
+    }
+    @-webkit-keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
+    @-moz-keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
+    @-o-keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
+       @keyframes animationBanner { 0% { opacity: 0; top: -11rem; } 91% { opacity: 0; top: -11rem; } 100% { opacity: 1; top: 0; } }
+    @-webkit-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
+    @-moz-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
+    @-o-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
+       @keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 11rem; } }
+    
+    @-webkit-keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+    @-moz-keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+    @-o-keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+    @keyframes animationClosing { 0% { height: 11rem; opacity: 1; } 30% { height: 11rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+    
+    @media(max-width: 575px) {
+    
+      @-webkit-keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
+      @-moz-keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
+      @-o-keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
+        @keyframes animationBanner { 0% { opacity: 0; top: -14rem; } 91% { opacity: 0; top: -14rem; } 100% { opacity: 1; top: 0; } }
+      @-webkit-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
+      @-moz-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
+      @-o-keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
+        @keyframes animationHeight { 0% { height: 0; } 91% { height: 0; } 100% { height: 14rem; } }
+    
+      @-webkit-keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+      @-moz-keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+      @-o-keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+      @keyframes animationClosing { 0% { height: 14rem; opacity: 1; } 30% { height: 14rem; opacity: 0.5;} 100% { height: 0; opacity: 0;} }
+    }
+    .tab-container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 7rem 1rem 4rem;
+    }
+    .tabs {
+      display: flex;
+      flex-wrap: wrap;
+      border-bottom: 2px solid #ccc;
+      justify-content: center;
+    }
+    .tab-button {
+      padding: 1rem;
+      cursor: pointer;
+      border: none;
+      background: none;
+      font-size: 1rem;
+    }
+    .tab-button.active {
+      border-bottom: 3px solid #333;
+      font-weight: bold;
+    }
+    .tab-content {
+      display: none;
+      padding: 2rem 0;
+      text-align: center;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .person-card img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+    .person-card h4 {
+      margin-top: 1rem;
+      margin-bottom: 0.25rem;
+    }
+    .person-card p {
+      font-style: italic;
+      margin: 0;
+    }
+    .page-section {
+      padding: 7rem 1rem 4rem;
+    }
+    .content-col {
+      padding: 1rem;
+    }
+    .content-col h3 {
+      margin-top: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .content-col ul {
+      padding-left: 1.5rem;
+      margin-bottom: 1.5rem;
+    }
+    .content-col img {
+      max-width: 100%;
+      margin: 1rem 0;
+    }
+    .content-col img {
+        display: inline-block;
+        margin: 1rem auto;
+        height: auto; /* let height be flexible unless specified */
+        width: auto;  /* let width be flexible unless specified */
+        max-width: 100%; /* still responsive */
+    }
+  </style>
+</head>
+<body>
+    <!-- NAV BAR -->
+  <section data-bs-version="5.1" class="menu menu2 cid-uJSrOkOEyE" once="menu" id="menu-5-uJSrOkOEyE">
+	
+
+	<nav class="navbar navbar-dropdown navbar-fixed-top navbar-expand-lg">
+		<div class="container">
+			<div class="navbar-brand">
+				<span class="navbar-logo">
+					<a href="#">
+						<img src="web_files/photo-1732881112067-aa3e9ece2-h_ma49wziz.jpg" alt="" style="height: 4.3rem;">
+					</a>
+				</span>
+				<span class="navbar-caption-wrap"><a class="navbar-caption text-black display-4" href="index.html" autocomplete="off">Home</a></span>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+				<div class="hamburger">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav nav-dropdown" data-app-modern-menu="true"><li class="nav-item">
+						<a class="nav-link link text-black display-4" href="people.html">People</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link link text-black display-4" href="research.html" aria-expanded="false">Research</a>
+					</li><li class="nav-item"><a class="nav-link link text-black display-4" href="publications.html" aria-expanded="false" autocomplete="off">Publications</a></li>
+					<li class="nav-item">
+						<a class="nav-link link text-black display-4" href="blog.html">Blog</a>
+					</li><li class="nav-item"><a class="nav-link link text-black display-4" href="open-sciences.html" autocomplete="off">Open Science</a></li><li class="nav-item">
+            <a class="nav-link link text-black display-4" href="opportunities.html" autocomplete="off">Opportunities</a></li><li class="nav-item">
+              <a class="nav-link link text-black display-4" href="links.html" autocomplete="off">Links</a></li></ul>
+				
+				<div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="contact.html" autocomplete="off">Contact Us</a></div>
+			</div>
+		</div>
+	</nav>
+</section>
+
+  <!-- PAGE CONTENT -->
+  <section class="page-section">
+    <h2 class="display-2 text-center mb-4"><strong>Registrations</strong></h2>
+    Registrations are archived outlines of our research questions, hypotheses and study designs. We increasingly register our research before conducting data collection, or even writing up detailed protocol.
+
+    <div class="paragraph"><ol><li><strong>Pottier P</strong>, Dougherty LR, Vasudeva R, Berger D, Domenech BC, Cole B, <strong>Drobniak S</strong>, Graziano M, Lupold S, Meena A, <strong>Nakagawa S</strong>, Pilakouta P, Ramm SA, Schou MF, Sim&otilde;es P, Svensson E, Tuni C, Fricke C (2023)&nbsp; <a href="https://osf.io/4b38s" target="_self">Evolution of reproductive success in response to changing temperatures: a meta-analysis</a>. OSF Registries | OSF Preregistration</li><li><strong>Yang Y, Morrison K, Lagisz M, Nakagawa S</strong> (2023) <a href="https://osf.io/6nwsy" target="_self">Interactive effects of stress and environmental enrichment on anxiety- and depression-like behavior: a protocol for a systematic review and meta-analysis</a>. OSF Registries | Open-Ended Registration</li><li><strong>Pollo P, Lagisz M</strong>, Culina A, <strong>Yang Y, Nakagawa S</strong> (2023) <a href="https://osf.io/wsefz" target="_self">Synthesis of sexual selection: registration for a systematic map and bibliometric analysis of meta-analyses</a>. OSF Registries | Open-Ended Registration</li><li><strong>Williams C, Lagisz M, Morrison K, Ricolfi L, Yang Y,</strong> Warton D, <strong>Nakagawa S</strong> (2023) <a href="https://osf.io/5juzp" target="_self">Assessment of reporting practices of simulation studies in ecology and evolution (for the evaluation of statistical methods)</a>. OSF Registries | Open-Ended Registration</li><li><strong><span style="color:rgb(51, 51, 51)">Morrison K,&nbsp;</span></strong><font color="#333333"><strong>Lagisz&nbsp;M, Williams C, Nakagawa S</strong>&nbsp;(2022)&nbsp;What are the gaps, biases, and limitations within existing meta-analyses in the organochlorine pesticide literature?: a Systematic Map Protocol. PROCEED-22-00043. Available&nbsp;from:&nbsp;</font><a href="https://www.proceedevidence.info/protocol/view-result?id=43" target="_blank">https://www.proceedevidence.info/protocol/view-result?id=43</a>,&nbsp;<a href="https://doi.org/10.57808/proceed.2022.8" target="_blank">https://doi.org/10.57808/proceed.2022.8</a>&nbsp;</li><li><strong>Martinig AR, Lagisz M</strong>, Burk S, <strong>Yang Y, Nakagawa S </strong>(2022) <a href="https://osf.io/7evqn" target="_self">Movement and behavioural phenotypes: systematic review and meta-analysis protocols</a>. OSF Registries | Open-Ended Registration</li><li><strong>Martinig AR, Lagisz M</strong>, Burk S, <strong>Yang Y, Nakagawa S</strong> (2022) <a href="https://osf.io/b87gs" target="_self">Lifetime fitness effects of dispersal: systematic review and meta-analysis protocols</a>. OSF Registries | Open-Ended Registration</li><li><strong>Ricolfi L, Nakagawa S, Lagisz M</strong> (2022) <a href="https://osf.io/ycasz/" target="_self">Maternal transfer of poly- and perfluoroalkyl substances (PFAS) in wild birds - a systematic review and meta-analysis</a>. OSF Registries | OSF Preregistration</li><li><span style="color:rgb(42, 42, 42)">Welsh C, <strong>Lagisz M</strong>, <strong>Nakagawa S</strong>, House C, Hunt J&nbsp;(2022)&nbsp;</span><span><a href="https://osf.io/xk8p5/">Effects on dietary protein on gut microbiota in animals: protocol of a meta-analysis</a>.&nbsp;</span>OSF Registries | OSF-Standard Pre-Data Collection Registration</li><li><span style="color:rgb(42, 42, 42)">Chin J,</span><span style="color:rgb(42, 42, 42)">&nbsp;Growns B,</span><span style="color:rgb(42, 42, 42)">&nbsp;<strong>Nakagawa S</strong>,&nbsp;</span><span style="color:rgb(42, 42, 42)">Page MJ,&nbsp;</span><span style="color:rgb(42, 42, 42)">Sebastian J (2022)</span><a href="https://osf.io/y43pe/" target="_self"><span>&nbsp;</span>Systematic reviews in forensic science.<span>&nbsp;</span></a>OSF Registries | Open-Ended Registration</li><li><span style="color:rgb(42, 42, 42)"><strong>Lagisz M</strong>, S&aacute;nchez-Mercado A,</span>&nbsp;Amin B,&nbsp;Lara CE, Rutkowska J, Aich U, <strong>Nakagawa&#8203; S</strong>&nbsp;<span style="color:rgb(42, 42, 42)">(2022)&nbsp;</span><span><a href="https://osf.io/xh47b/">Evaluating biases in eligibility and criteria for scientific awards in ecology and evolution</a>.&nbsp;</span>OSF-Standard Pre-Data Collection Registration</li><li>Sanghvi K, Pizzari T, Sepil I,&nbsp;<strong>Nakagawa S</strong>, Vega-Trejo R, Johnson S, Gascoigne S,&nbsp;Salguero-Gomez R (2021) <a href="https://osf.io/2d8z6" target="_blank">Effects of male age on sperm and ejaculate traits in non-human animals: A systematic review and meta-analys</a>i<a href="https://osf.io/2d8z6" target="_blank">s</a>.&nbsp;OSF Registries | OSF Preregistration</li><li><strong>Pottier P</strong>, <strong>Nakagawa&nbsp;S</strong>,&nbsp;<strong>Burke S, Drobniak S</strong>, Noble D,&nbsp;Schwanz L,&nbsp;&nbsp;Zhang R (2021)&nbsp;<span style="color:rgb(42, 42, 42)"><a href="https://osf.io/zkx6u" target="_blank">Developmental plasticity of heat tolerance in ectotherms: a systematic review and meta-analysis</a>. </span>OSF Registries | OSF Preregistration</li><li><span style="color:rgb(42, 42, 42)"><strong>Vendl C,</strong>&nbsp;Taylor MD,</span>&nbsp;Braeunig J,&nbsp;Gibson MJ,&nbsp;Hesselson D,&nbsp;Neely GG,&nbsp;<strong>Lagisz M</strong>, <strong>Nakagawa</strong><span style="color:rgb(42, 42, 42)"><strong>&nbsp;S</strong> (2021)&nbsp;</span><span><a href="https://osf.io/7t4u2/">PFAS exposure of humans, animals and the environment: registration of the protocol of an evidence review map and bibliometric analysis</a>.&nbsp;</span>OSF Registries | Open-Ended Registration</li><li><span style="color:rgb(42, 42, 42)"><strong>Macartney E</strong>, <strong>Lagisz M</strong>, <strong>Nakagawa S</strong> (2021)&nbsp;</span><span><a href="https://osf.io/r328g/">Interactive and main effects of stress and environmental enrichment on rodent learning and memory: a protocol for a systematic review and meta-analysis</a>.&nbsp;</span>OSF Registries | Open-Ended Registration</li><li><span style="color:rgb(42, 42, 42)"><strong>Vendl C</strong>, <strong>Nakagawa S</strong>, <strong>Lagisz M</strong> (2021)&nbsp;</span><span><a href="https://osf.io/7m542/">Profiling research on PFAS in wildlife: protocol of a systematic evidence map and bibliometric analysis</a>.&nbsp;</span>OSF Registries | Open-Ended Registration</li><li>Martin J, Bertram M,&nbsp;Blanchfield P,&nbsp;Brand J,&nbsp;Brodin T,&nbsp;Brooks B,&nbsp;Cerveny D,&nbsp;<strong>Lagisz M</strong>, Ligocki I, Michelangeli M, <strong>Nakagawa S</strong>,&nbsp;Orford J, Sundin J,&nbsp;Tan H, Wong B, McCallum E&nbsp;(2021)&nbsp;<a href="https://osf.io/7n92e/">Understanding the impacts of pharmaceuticals on aquatic wildlife behaviour: a systematic map of evidence</a>.&nbsp;OSF Registries | Open-Ended Registration</li><li><span style="color:rgb(42, 42, 42)"><strong>Pottier P</strong>, </span><strong>Nakagawa S</strong>,&nbsp;<strong>Drobniak S</strong>,&nbsp;<strong>Burke S</strong>,&nbsp;<strong>Lagisz&nbsp;M</strong><span style="color:rgb(42, 42, 42)">&nbsp;(2020)&nbsp;</span><span><a href="https://osf.io/x9y6h/">Sex differences in thermal acclimation capacity across ectotherms: a systematic review and meta-analysis</a>.&nbsp;</span>OSF Registries | OSF Preregistration</li><li><span style="color:rgb(42, 42, 42)">Kellie D,&nbsp;</span><span style="color:rgb(42, 42, 42)">Parker TH,&nbsp;</span><span style="color:rgb(42, 42, 42)"><strong>Nakagawa S</strong> (2020)&nbsp;</span><a href="https://osf.io/uj2hm" target="_blank">To what extent do biological and methodological differences drive heterogeneity in results in ecology?</a> OSF Registries | OSF Preregistration</li><li>Grames E,&nbsp;Montgomery GA,&nbsp;Haddaway NR,&nbsp;Dicks LV,&nbsp;Elphick CS,&nbsp;Matson TA,&nbsp;<strong>Nakagawa S</strong>,&nbsp;Saunders ME,&nbsp;Tingley MW,&nbsp;&nbsp;White TE,&nbsp;Woodcock P,&nbsp;&nbsp;Wagner DL (2019) <a href="https://osf.io/q63uy" target="_blank">Trends in global insect abundance and biodiversity: A community-driven systematic map protocol</a><span style="color:rgb(42, 42, 42)">.&nbsp;</span>OSF Registries | Open-Ended Registration</li><li>Sanchez-Tojar A,&nbsp;Moran NP, Watve M,<strong> Nakagawa S</strong>, &#8203;Noble D, Taborsky B, Schielzeth H, Reinhold K (2019)&nbsp;<span style="color:rgb(42, 42, 42)"><a href="https://osf.io/8ecw5" target="_blank">Anticipatory parental effects revisited: a systematic review and meta-analysis of means and variances</a>. </span>OSF Registries | OSF Preregistration</li><li><span style="color:rgb(42, 42, 42)"><strong>O'Dea RE</strong>, Jennions MD,</span>&nbsp;Koricheva J,&nbsp;<strong>Lagisz M</strong>,&nbsp;<strong>Noble D</strong>, Parker TH,&nbsp;<strong>Nakagawa S</strong>&nbsp;<span style="color:rgb(42, 42, 42)">(2019)&nbsp;</span><span><a href="https://osf.io/8zkxt/">Protocol for Assessment of Current Reporting Practices of Preferred Reporting Items for Systematic Reviews and Meta-Analyses in Ecology and Evolution (PRISMA-EcoEvo)</a>.&nbsp;</span>OSF Registries | Open-Ended Registration</li><li><strong>Anwer H</strong>, <strong>Fangmeier ML</strong>, <strong>Nakagawa S</strong>,<span style="color:rgb(42, 42, 42)">&nbsp;<strong>Lagisz M</strong>,</span>&nbsp;<strong>Aloy A</strong>&nbsp;<span style="color:rgb(42, 42, 42)">(2019)&nbsp;</span><span><a href="https://osf.io/sg6wj/">Transgenerational effects of obesogenic diets in rodents: a systematic review and meta-analysis</a>.&nbsp;</span>OSF Registries | Prereg Challenge&#8203;</li><li><strong>O'Dea RE</strong>, <strong>Lagisz M</strong>,&nbsp;<strong>Hendry AP</strong>, <strong>Nakagawa S&nbsp;</strong>(2018)&nbsp;<a href="https://osf.io/8ymh9/">The effect of rearing temperature on phenotypic mean and variance of fishes</a>.&nbsp;<span style="color:rgb(42, 42, 42)">OSF Registries | Prereg Challenge&#8203;</span></li><li><strong>Aloy A</strong><span>, <strong>Lagisz M</strong>, <strong>Anwer H</strong>, &#8203;<strong>Noble D</strong>, <strong>Nakagawa S</strong> (2019)&nbsp;<a href="https://osf.io/vawzm/">A meta-analysis on inter-generational effects of exercise on cognitive behaviour and brain development in rodent model systems</a>.&nbsp;</span><span style="color:rgb(42, 42, 42)">OSF Registries | Prereg Challenge&#8203;</span></li><li><span style="color:rgb(42, 42, 42)"><strong>Foo Y</strong>, <strong>O'Dea RE</strong>,<strong> Lagisz M</strong>, <strong>Nakagawa S</strong> (2019)&nbsp;</span><span><a href="https://osf.io/wnhkq/">Terminal Investment MA</a>.&nbsp;</span><span style="color:rgb(42, 42, 42)">OSF Registries | Prereg Challenge&#8203;</span></li><li><span style="color:rgb(42, 42, 42)"><strong>Foo Y</strong>, <strong>Nakagawa S</strong>, <strong>Lagisz M</strong>&nbsp;</span><span style="color:rgb(42, 42, 42)">(2019)&nbsp;</span><span><a href="https://osf.io/8k5ph/">Sex difference in immunity</a>.&nbsp;</span><span style="color:rgb(42, 42, 42)">OSF Registries | Prereg Challenge&#8203;</span></li><li><span style="color:rgb(42, 42, 42)"><strong>Lagisz&nbsp;M</strong>&nbsp;</span><span style="color:rgb(42, 42, 42)">(2018)&nbsp;</span><span><a href="https://osf.io/7r2ad/">Scoping/rapid reviews: residential customer engagement with energy systems</a>.&nbsp;</span>OSF Registries | OSF-Standard Pre-Data Collection Registration</li><li><span style="color:rgb(42, 42, 42)"><strong>Lagisz&nbsp;M</strong>&nbsp;(2018)&nbsp;<a href="https://osf.io/sdaku/">Mapping of Low Carbon Living-related systematic reviews of literature</a>.&nbsp;</span>OSF Registries | OSF-Standard Pre-Data Collection Registration&#8203;</li><li><span><strong>Lagisz M</strong> (2017)&nbsp;</span><a href="https://osf.io/bqatk/">Effects of maternal obesogenic diets on offspring learning and cognition: systematic review and meta-analysis of rodent studies</a><span>.&nbsp;</span><span style="color:rgb(42, 42, 42)">OSF Registries | Prereg Challenge&#8203;</span></li><li>Fidler F, Parker TH, Barnett A, <strong>Nakagawa S</strong>, Fraser H,&nbsp;Kambouris&nbsp;S (2017)&nbsp;<span style="color:rgb(42, 42, 42)"><a href="https://osf.io/rg2nq" target="_blank">Questionable Research Practices in Ecology and Evolution</a>. OSF Registries | Prereg Challenge&#8203;</span></li><li><strong>Usui T</strong>,&nbsp;Senior AM,&nbsp;McCann S,&nbsp;Macleod M,&nbsp;<strong>Nakagawa S</strong> (2017)&nbsp;<span style="color:rgb(42, 42, 42)"><a href="https://osf.io/hgd6m" target="_blank">Embracing heterogeneity in preclinical research: a perspective from meta-analysis of variance on rodent animal models of stroke</a>. OSF Registries | Prereg Challenge&#8203;</span></li><li><strong>Merkling T</strong>, <strong>Nakagawa&nbsp;S</strong>, <strong>Lagisz M</strong>, <strong>Schwanz L</strong> (2017)&nbsp;<a href="https://osf.io/vfnhg/">Preregistration for Meta-analysis maternal testosterone and offspring sex-ratio</a>.&nbsp;<span style="color:rgb(42, 42, 42)">OSF Registries | Prereg Challenge&#8203;</span></li></ol><br /><span style="color:rgb(42, 42, 42)">NOTE: <strong>Bold</strong> font indicates our research group members.</span></div>
+
+ </section>
+
+  <!-- FOOTER -->
+  <section data-bs-version="5.1" class="footer3 cid-uJSrOkUoKf">
+    <div class="container">
+      <div class="row">
+        <div class="row-links">
+          <ul class="header-menu">
+            <li class="header-menu-item mbr-fonts-style display-5">
+                <a href="index.html" class="text-white">Home</a>
+              </li><li class="header-menu-item mbr-fonts-style display-5">
+                <a href="people.html" class="text-white">People</a>
+              </li><li class="header-menu-item mbr-fonts-style display-5">
+                <a href="research.html" class="text-white">Research</a>
+              </li><li class="header-menu-item mbr-fonts-style display-5">
+                <a href="publications.html" class="text-white">Publications</a>
+              </li><li class="header-menu-item mbr-fonts-style display-5">
+                <a href="blog.html" class="text-white">Blog</a>
+              </li><li class="header-menu-item mbr-fonts-style display-5">
+                <a href="open-sciences.html" class="text-white">Open Science</a>
+              </li><li class="header-menu-item mbr-fonts-style display-5">
+                <a href="opportunities.html" class="text-white">Opportunities</a>
+              </li><li class="header-menu-item mbr-fonts-style display-5">
+                <a href="links.html" class="text-white">Links</a>
+              </li></ul>
+          </ul>
+        </div>
+        <div class="col-12 mt-4">
+          <p class="mbr-fonts-style copyright display-7">
+            © 2025 COSSEE Lab. Created by <a href="https://www.linkedin.com/in/bhavya-jain-b42618237/" target="_blank" rel="noopener">Bhavya Jain</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="js/1.js"></script>
+  <script src="js/2.js"></script>
+  <script src="js/3.js"></script>
+  <script src="js/4.js"></script>
+  <script src="js/5.js"></script>
+  <script src="js/6.js"></script>
+  <script src="js/7.js"></script>
+  <script src="js/8.js"></script>
+  <script src="js/9.js"></script>
+
+</body>
+</html>
+
