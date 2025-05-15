@@ -124,6 +124,17 @@
         width: auto;  /* let width be flexible unless specified */
         max-width: 100%; /* still responsive */
     }
+    .member-button.active {
+  background-color: #007bff;
+  color: white;
+}
+.filters .filter-group {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
   </style>
 </head>
 <body>
@@ -329,9 +340,6 @@
 .tab-content.active {
   display: block;
 }
-
-
-
 
   </style>
   <div class="tab-container ">
@@ -728,6 +736,33 @@ function filterTabs() {
     button.style.display = visible ? 'inline-block' : 'none';
   });
 }
+
+function filterTabs() {
+  members.forEach(member => {
+    const tab = document.getElementById(member.id);
+    const button = document.querySelector(`.member-button[data-id="${member.id}"]`);
+    if (!tab || !button) return;
+
+    const statusMatch = activeStatus === 'all' || member.status === activeStatus;
+    const roleMatch = activeRole === 'all' || member.role === activeRole;
+
+    const visible = statusMatch && roleMatch;
+    tab.style.display = visible && member.id === activeTabId ? 'block' : 'none';
+    button.style.display = visible ? 'inline-block' : 'none';
+
+    // Highlight selected tab's button in red
+    if (member.id === activeTabId) {
+      button.style.backgroundColor = 'red';
+      // Optionally, change text color for better contrast
+      button.style.color = 'white';
+    } else {
+      // Reset other buttons to default style
+      button.style.backgroundColor = '';
+      button.style.color = '';
+    }
+  });
+}
+
 
 document.querySelectorAll('.member-button').forEach(btn => {
   btn.onclick = () => {
