@@ -205,6 +205,12 @@
   align-items: center; /* center horizontally */
   gap: 1rem; /* spacing between filter groups */
 }
+.line-separator {
+  height: 1px;
+  background-color: #ff9900;
+  margin: 10px 0;
+  width: 100%;
+}
 
 .filter-group, .member-buttons {
   text-align: center; /* center text and inline elements inside */
@@ -380,6 +386,7 @@
         <button class="filter-button" data-role="Lab Managers">Lab Managers</button>
         <button class="filter-button" data-role="Visitors">Visitors</button>
       </div>
+      <div class="line-separator"></div>
       <div class="member-buttons">
         <button class="member-button" data-id="shinichi">Shinichi Nakagawa</button>
         <button class="member-button" data-id="bhavya">Bhavya Jain</button>
